@@ -1,4 +1,4 @@
-fastapi
+clsfastapi
 uvicorn
 pandas
 requests

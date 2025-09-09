@@ -38,7 +38,9 @@ export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
-  const [apiUrl, setApiUrl] = useState("http://localhost:8000")
+  const [apiUrl, setApiUrl] = useState(
+    process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+  )
   const [mounted, setMounted] = useState(false)
   const scrollAreaRef = useRef<HTMLDivElement>(null)
   const { theme, setTheme, resolvedTheme } = useTheme()
