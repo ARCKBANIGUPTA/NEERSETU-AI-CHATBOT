@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pandas
+requests
+plotly
+python-dotenv
+pydantic
+langchain
+langchain-experimental
+langchain-groq
+sse-starlette
+websockets
+fastapi-cors
+streamlit
+pandasai
+openai
