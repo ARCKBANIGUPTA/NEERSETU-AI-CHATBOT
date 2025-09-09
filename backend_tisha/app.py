@@ -15,7 +15,7 @@ import json
 import uvicorn
 
 # LangChain imports
-from langchain_experimental.agents import create_pandas_dataframe_agent
+# from langchain_experimental.agents import create_pandas_dataframe_agent  # Removed due to Rust compilation issues
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -118,14 +118,15 @@ class GroundwaterAssistant:
                 temperature=0,
             )
 
-            self.langchain_agent = create_pandas_dataframe_agent(
-                llm_groq,
-                self.df,
-                verbose=False,
-                return_intermediate_steps=False,
-                allow_dangerous_code=True,
-                handle_parsing_errors=True
-            )
+            # self.langchain_agent = create_pandas_dataframe_agent(
+            #     llm_groq,
+            #     self.df,
+            #     verbose=False,
+            #     return_intermediate_steps=False,
+            #     allow_dangerous_code=True,
+            #     handle_parsing_errors=True
+            # )
+            self.langchain_agent = None  # Disabled due to Rust compilation issues
 
         except Exception as e:
             print(f"Error setting up AI agent: {str(e)}")

@@ -10,12 +10,6 @@ const nextConfig = {
     unoptimized: true,
   },
   // Vercel-specific optimizations
-  experimental: {
-    // Enable faster refresh for development
-    fastRefresh: true,
-  },
-  // Enable SWC minification for better performance
-  swcMinify: true,
   // Optimize for Vercel deployment
   output: 'standalone',
   // Enable compression
