@@ -40,7 +40,7 @@ export default function ChatPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [isListening, setIsListening] = useState(false)
   const [apiUrl, setApiUrl] = useState(
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+    process.env.NEXT_PUBLIC_API_URL || "https://neersetu.onrender.com"
   )
   const [mounted, setMounted] = useState(false)
   const scrollAreaRef = useRef<HTMLDivElement>(null)
