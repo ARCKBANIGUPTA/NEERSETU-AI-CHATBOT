@@ -4,5 +4,5 @@ pandas==2.1.4
 requests==2.31.0
 plotly==5.17.0
 python-dotenv==1.0.0
-pydantic==2.5.0
-langchain-groq==0.0.3
+pydantic==2.9.2
+langchain-groq==0.3.8
