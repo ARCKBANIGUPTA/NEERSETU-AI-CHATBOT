@@ -1,333 +1,590 @@
 State,District,Block,Year,Groundwater_Level_m,Recharge_mm,Extraction_mm,Stage_of_Extraction
-Arunachal Pradesh,,,2020,17.5,206.0,361.0,Over-Exploited
-Jammu and Kashmir,Anantnag,Block 2,2019,13.6,368.0,206.0,Safe
-Gujarat,Ahmedabad,Block 2,2022,16.4,330.0,333.0,Over-Exploited
-Punjab,Ludhiana,Block 1,2018,16.7,335.0,278.0,Semi-Critical
-Gujarat,Vadodara,Block 1,2017,15.0,236.0,343.0,Over-Exploited
-Madhya Pradesh,Bhopal,Block 2,2018,18.2,390.0,328.0,Semi-Critical
-Uttar Pradesh,Aligarh,Block 1,2023,16.8,274.0,375.0,Over-Exploited
-Maharashtra,Mumbai,Block 2,2021,12.8,,,
-Punjab,Jalandhar,Block 1,2020,14.4,215.0,279.0,Over-Exploited
-Punjab,Ludhiana,Block 2,2020,11.2,217.0,197.0,Critical
-Haryana,,,2018,5.6,347.0,204.0,Safe
-Andhra Pradesh,Nellore,Block 1,2015,13.1,334.0,411.0,Over-Exploited
-Jammu and Kashmir,Srinagar,Block 1,2023,18.6,391.0,256.0,Safe
-Karnataka,Bengaluru,Block 2,2015,,343.0,344.0,Over-Exploited
-Uttar Pradesh,Gorakhpur,Block 1,2021,7.1,335.0,265.0,Semi-Critical
-Kerala,Thiruvananthapuram,Block 2,2022,18.8,255.0,200.0,Semi-Critical
-Karnataka,Mangalore,Block 1,2023,14.7,332.0,262.0,Semi-Critical
-Madhya Pradesh,Gwalior,Block 2,2023,13.8,205.0,197.0,Critical
-Haryana,,,2016,17.1,215.0,262.0,Over-Exploited
-Punjab,Amritsar,Block 1,2017,17.4,303.0,361.0,Over-Exploited
-Jharkhand,Ranchi,Block 1,2018,,272.0,343.0,Over-Exploited
-Kerala,Kozhikode,Block 1,2023,11.4,285.0,231.0,Semi-Critical
-West Bengal,,,2021,5.4,226.0,356.0,Over-Exploited
-Punjab,Amritsar,Block 1,2018,7.7,392.0,350.0,Semi-Critical
-Andhra Pradesh,West Godavari,Block 1,2017,9.7,289.0,217.0,Semi-Critical
-Jharkhand,Ranchi,Block 2,2017,,,396.0,
-Uttar Pradesh,Varanasi,Block 1,2023,12.4,253.0,183.0,Semi-Critical
-Jammu and Kashmir,Srinagar,Block 2,2021,12.4,,377.0,
-Madhya Pradesh,Bhopal,Block 1,2016,8.8,326.0,253.0,Semi-Critical
-Jammu and Kashmir,Srinagar,Block 2,2022,18.3,247.0,390.0,Over-Exploited
-Maharashtra,Nagpur,Block 1,2016,17.7,330.0,335.0,Over-Exploited
-Chandigarh,,,2021,18.4,282.0,216.0,Semi-Critical
-Gujarat,Bhavnagar,Block 2,2018,5.8,242.0,237.0,Critical
-Himachal Pradesh,Manali,Block 1,2022,13.3,326.0,304.0,Critical
-Rajasthan,Kota,Block 2,2015,14.8,202.0,414.0,Over-Exploited
-Mizoram,,,2019,12.3,278.0,300.0,Over-Exploited
-Manipur,,,2023,13.3,206.0,394.0,Over-Exploited
-Uttar Pradesh,Lucknow,Block 1,2016,6.9,339.0,366.0,Over-Exploited
-Gujarat,Surat,Block 1,2021,17.1,328.0,180.0,Safe
-Karnataka,Mangalore,Block 2,2017,5.4,298.0,239.0,Semi-Critical
-Chhattisgarh,,,2023,16.8,377.0,199.0,Safe
-Goa,North Goa,Block 1,2021,14.3,309.0,351.0,Over-Exploited
-Rajasthan,Bhilwara,Block 2,2018,11.0,296.0,,
-Maharashtra,Mumbai,Block 2,2018,,395.0,298.0,Semi-Critical
-Karnataka,Mangalore,Block 1,2015,19.5,243.0,,
-Gujarat,Ahmedabad,Block 2,2018,5.3,,372.0,
-Maharashtra,Mumbai,Block 1,2022,8.6,372.0,369.0,Critical
-Goa,North Goa,Block 2,2019,14.7,254.0,341.0,Over-Exploited
-Jharkhand,Jamshedpur,Block 2,2022,15.7,366.0,,
-Jammu and Kashmir,Jammu,Block 2,2017,15.8,381.0,247.0,Safe
-Himachal Pradesh,Mandi,Block 2,2020,,334.0,240.0,Semi-Critical
-Rajasthan,Kota,Block 1,2022,,365.0,261.0,Semi-Critical
-Punjab,Patiala,Block 1,2020,15.8,298.0,372.0,Over-Exploited
-Andhra Pradesh,Chittoor,Block 1,2018,15.2,268.0,214.0,Semi-Critical
-Jharkhand,Ranchi,Block 1,2019,19.3,220.0,256.0,Over-Exploited
-Tamil Nadu,Madurai,Block 2,2023,8.6,281.0,331.0,Over-Exploited
-Andhra Pradesh,West Godavari,Block 2,2023,13.3,345.0,313.0,Critical
-Gujarat,Vadodara,Block 1,2023,8.6,279.0,238.0,Semi-Critical
-Madhya Pradesh,Indore,Block 1,2020,11.2,365.0,410.0,Over-Exploited
-Rajasthan,Bhilwara,Block 1,2023,17.5,326.0,269.0,Semi-Critical
-Andaman and Nicobar Islands,,,2017,7.3,370.0,277.0,Semi-Critical
-Uttarakhand,,,2021,19.4,210.0,256.0,Over-Exploited
-Tripura,,,2023,17.4,266.0,244.0,Critical
-Andhra Pradesh,Guntur,Block 2,2015,5.0,327.0,302.0,Critical
-Himachal Pradesh,Shimla,Block 1,2016,18.3,209.0,253.0,Over-Exploited
-Sikkim,,,2017,15.8,372.0,330.0,Semi-Critical
-Gujarat,Bhavnagar,Block 1,2019,13.5,330.0,197.0,Safe
-Rajasthan,Bhilwara,Block 1,2017,15.4,365.0,404.0,Over-Exploited
-Himachal Pradesh,Shimla,Block 1,2022,7.3,,245.0,
-Uttar Pradesh,Varanasi,Block 1,2016,6.2,,295.0,
-Andhra Pradesh,Chittoor,Block 2,2022,12.2,,240.0,
-Arunachal Pradesh,,,2018,14.3,245.0,299.0,Over-Exploited
-Tamil Nadu,Coimbatore,Block 1,2016,17.7,276.0,201.0,Semi-Critical
-Ladakh,,,2020,12.8,326.0,362.0,Over-Exploited
-Uttar Pradesh,Kanpur,Block 1,2017,11.9,221.0,413.0,Over-Exploited
-Maharashtra,Pune,Block 2,2023,7.8,229.0,289.0,Over-Exploited
-Himachal Pradesh,Manali,Block 1,2016,8.2,222.0,384.0,Over-Exploited
-Jharkhand,Ranchi,Block 2,2021,,263.0,303.0,Over-Exploited
-Madhya Pradesh,Gwalior,Block 1,2023,19.6,346.0,339.0,Critical
-Sikkim,,,2023,11.4,346.0,353.0,Over-Exploited
-Karnataka,Mangalore,Block 2,2018,18.4,326.0,383.0,Over-Exploited
-Kerala,Kozhikode,Block 2,2023,6.4,231.0,305.0,Over-Exploited
-Maharashtra,Pune,Block 2,2018,18.1,209.0,411.0,Over-Exploited
-Himachal Pradesh,Kullu,Block 2,2016,,370.0,276.0,Semi-Critical
-Jammu and Kashmir,Anantnag,Block 1,2022,16.2,329.0,331.0,Over-Exploited
-Jammu and Kashmir,Anantnag,Block 2,2015,9.5,217.0,379.0,Over-Exploited
-Bihar,,,2020,17.7,377.0,,
-Rajasthan,Kota,Block 1,2023,17.1,368.0,333.0,Critical
-Meghalaya,,,2022,12.5,313.0,260.0,Semi-Critical
-West Bengal,,,2022,11.0,296.0,282.0,Critical
-Rajasthan,Jaipur,Block 1,2015,5.4,272.0,270.0,Critical
-Puducherry,,,2021,17.2,330.0,362.0,Over-Exploited
-Madhya Pradesh,Gwalior,Block 2,2019,6.3,270.0,184.0,Safe
-Gujarat,Vadodara,Block 2,2015,18.0,210.0,371.0,Over-Exploited
-Karnataka,Mysuru,Block 1,2021,19.7,371.0,305.0,Semi-Critical
-Andhra Pradesh,Chittoor,Block 1,2015,5.7,380.0,248.0,Safe
-Andhra Pradesh,West Godavari,Block 2,2019,18.5,358.0,194.0,Safe
-Uttar Pradesh,Kanpur,Block 2,2023,7.5,214.0,250.0,Over-Exploited
-Himachal Pradesh,Mandi,Block 1,2017,19.6,308.0,,
-Bihar,,,2017,13.5,210.0,202.0,Critical
-Andhra Pradesh,Krishna,Block 2,2017,11.2,350.0,346.0,Critical
-Uttar Pradesh,Aligarh,Block 2,2018,10.3,209.0,300.0,Over-Exploited
-Jammu and Kashmir,Anantnag,Block 2,2023,12.4,237.0,,
-Gujarat,Vadodara,Block 1,2022,,383.0,287.0,Semi-Critical
-Rajasthan,Ajmer,Block 2,2018,7.1,214.0,255.0,Over-Exploited
-Andhra Pradesh,Nellore,Block 1,2020,5.1,212.0,315.0,Over-Exploited
-Uttar Pradesh,Lucknow,Block 2,2018,17.2,346.0,199.0,Safe
-Rajasthan,Bhilwara,Block 2,2023,18.6,204.0,188.0,Critical
-Himachal Pradesh,Shimla,Block 2,2021,7.5,342.0,308.0,Critical
-Madhya Pradesh,Jabalpur,Block 1,2015,16.1,288.0,,
-Goa,South Goa,Block 2,2023,9.6,265.0,284.0,Over-Exploited
-Tamil Nadu,Coimbatore,Block 2,2020,12.5,367.0,198.0,Safe
-Jharkhand,Dhanbad,Block 1,2018,15.0,309.0,345.0,Over-Exploited
-Madhya Pradesh,Jabalpur,Block 2,2016,8.2,232.0,341.0,Over-Exploited
-Jammu and Kashmir,Anantnag,Block 1,2016,13.6,375.0,306.0,Semi-Critical
-Madhya Pradesh,Rewa,Block 1,2019,6.9,329.0,333.0,Over-Exploited
-Karnataka,Bengaluru,Block 1,2023,,343.0,392.0,Over-Exploited
-Punjab,Ludhiana,Block 2,2015,7.1,376.0,233.0,Safe
-Gujarat,Gandhinagar,Block 1,2015,17.6,236.0,237.0,Over-Exploited
-Punjab,Jalandhar,Block 1,2016,9.9,374.0,403.0,Over-Exploited
-Andhra Pradesh,Chittoor,Block 2,2021,10.9,263.0,379.0,Over-Exploited
-Punjab,Ludhiana,Block 2,2018,6.6,242.0,354.0,Over-Exploited
-Rajasthan,Jaipur,Block 1,2018,6.7,348.0,370.0,Over-Exploited
-Kerala,Kozhikode,Block 1,2021,11.3,261.0,409.0,Over-Exploited
-Andhra Pradesh,Krishna,Block 1,2022,12.1,242.0,,
-Maharashtra,Nagpur,Block 1,2021,,305.0,193.0,Safe
-Himachal Pradesh,Mandi,Block 1,2020,5.9,292.0,296.0,Over-Exploited
-Himachal Pradesh,Shimla,Block 2,2016,,200.0,352.0,Over-Exploited
-Gujarat,Gandhinagar,Block 2,2018,18.8,279.0,,
-Punjab,Jalandhar,Block 2,2018,5.0,347.0,,
-Himachal Pradesh,Mandi,Block 2,2015,15.5,,328.0,
-Jharkhand,Jamshedpur,Block 1,2017,,377.0,339.0,Semi-Critical
-Uttar Pradesh,Agra,Block 2,2020,,,245.0,
-Gujarat,Gandhinagar,Block 2,2015,,240.0,407.0,Over-Exploited
-Andhra Pradesh,Krishna,Block 2,2015,12.9,344.0,272.0,Semi-Critical
-Goa,South Goa,Block 1,2020,,,227.0,
-Tamil Nadu,Madurai,Block 2,2020,13.1,,,
-Gujarat,Gandhinagar,Block 2,2020,19.5,379.0,302.0,Semi-Critical
-Uttar Pradesh,Kanpur,Block 1,2020,,336.0,331.0,Critical
-Madhya Pradesh,Gwalior,Block 1,2022,20.0,250.0,189.0,Semi-Critical
-Karnataka,Bengaluru,Block 1,2017,10.1,385.0,380.0,Critical
-Maharashtra,Pune,Block 1,2023,,308.0,235.0,Semi-Critical
-Himachal Pradesh,Manali,Block 2,2020,7.4,278.0,309.0,Over-Exploited
-Uttar Pradesh,Aligarh,Block 1,2022,5.5,339.0,363.0,Over-Exploited
-Madhya Pradesh,Jabalpur,Block 1,2020,19.9,284.0,277.0,Critical
-Uttar Pradesh,Aligarh,Block 1,2015,15.9,360.0,262.0,Semi-Critical
-Madhya Pradesh,Indore,Block 1,2022,16.2,,367.0,
-Tamil Nadu,Coimbatore,Block 1,2015,11.6,244.0,308.0,Over-Exploited
-Punjab,Amritsar,Block 1,2022,14.6,272.0,363.0,Over-Exploited
-Rajasthan,Ajmer,Block 2,2019,,295.0,254.0,Semi-Critical
-Madhya Pradesh,Rewa,Block 1,2015,18.0,334.0,227.0,Safe
-Uttar Pradesh,Agra,Block 2,2015,16.5,253.0,366.0,Over-Exploited
-Kerala,Thiruvananthapuram,Block 1,2022,,254.0,282.0,Over-Exploited
-Goa,South Goa,Block 2,2016,18.6,357.0,344.0,Critical
-Tamil Nadu,Chennai,Block 2,2020,16.2,270.0,212.0,Semi-Critical
-Uttar Pradesh,Gorakhpur,Block 2,2020,18.0,304.0,235.0,Semi-Critical
-Madhya Pradesh,Bhopal,Block 1,2023,18.4,281.0,417.0,Over-Exploited
-Jharkhand,Ranchi,Block 2,2019,15.8,384.0,232.0,Safe
-Rajasthan,Jaipur,Block 2,2016,7.8,306.0,409.0,Over-Exploited
-Rajasthan,Bhilwara,Block 1,2015,9.9,321.0,257.0,Semi-Critical
-Karnataka,Mangalore,Block 2,2015,11.9,330.0,346.0,Over-Exploited
-Jammu and Kashmir,Jammu,Block 1,2023,,281.0,296.0,Over-Exploited
-Jammu and Kashmir,Srinagar,Block 1,2019,15.6,227.0,380.0,Over-Exploited
-Chandigarh,,,2016,10.9,331.0,347.0,Over-Exploited
-Meghalaya,,,2021,5.4,292.0,274.0,Critical
-Punjab,Jalandhar,Block 2,2016,8.1,370.0,283.0,Semi-Critical
-Madhya Pradesh,Jabalpur,Block 1,2023,15.2,399.0,275.0,Safe
-Rajasthan,Bhilwara,Block 2,2016,16.5,246.0,273.0,Over-Exploited
-Andhra Pradesh,Guntur,Block 2,2017,16.9,380.0,,
-Karnataka,Mangalore,Block 1,2021,19.5,387.0,300.0,Semi-Critical
-Maharashtra,Pune,Block 1,2018,14.4,343.0,357.0,Over-Exploited
-Uttar Pradesh,Kanpur,Block 2,2019,,395.0,413.0,Over-Exploited
-Karnataka,Mysuru,Block 1,2022,9.5,275.0,342.0,Over-Exploited
-Telangana,,,2015,16.9,347.0,398.0,Over-Exploited
-Uttar Pradesh,Lucknow,Block 1,2020,,380.0,,
-Karnataka,Bengaluru,Block 2,2022,14.7,238.0,227.0,Critical
-Gujarat,Ahmedabad,Block 2,2019,,364.0,,
-Assam,,,2023,12.2,368.0,403.0,Over-Exploited
-Himachal Pradesh,Manali,Block 1,2017,13.0,229.0,251.0,Over-Exploited
-Jammu and Kashmir,Anantnag,Block 1,2017,,210.0,243.0,Over-Exploited
-Jharkhand,Dhanbad,Block 2,2020,17.2,389.0,248.0,Safe
-Manipur,,,2017,15.1,,270.0,
-Lakshadweep,,,2015,18.5,390.0,193.0,Safe
-Kerala,Kochi,Block 1,2022,17.5,391.0,300.0,Semi-Critical
-Uttar Pradesh,Lucknow,Block 2,2021,18.5,221.0,248.0,Over-Exploited
-Goa,North Goa,Block 2,2021,7.5,326.0,193.0,Safe
-Delhi,,,2016,,374.0,269.0,Semi-Critical
-Gujarat,Gandhinagar,Block 1,2019,10.2,,310.0,
-Sikkim,,,2019,12.7,399.0,356.0,Semi-Critical
-Himachal Pradesh,Manali,Block 2,2019,5.7,268.0,316.0,Over-Exploited
-Mizoram,,,2021,18.8,247.0,351.0,Over-Exploited
-Gujarat,Ahmedabad,Block 1,2017,14.5,313.0,257.0,Semi-Critical
-Madhya Pradesh,Rewa,Block 1,2020,18.8,327.0,,
-Andhra Pradesh,Nellore,Block 2,2021,6.5,389.0,363.0,Critical
-Goa,South Goa,Block 1,2021,,,335.0,
-Assam,,,2020,8.2,211.0,333.0,Over-Exploited
-Maharashtra,Nagpur,Block 2,2018,16.8,,345.0,
-Madhya Pradesh,Gwalior,Block 1,2020,14.3,200.0,294.0,Over-Exploited
-Rajasthan,Kota,Block 2,2022,14.5,342.0,244.0,Semi-Critical
-Kerala,Thiruvananthapuram,Block 2,2023,14.4,212.0,205.0,Critical
-Punjab,Amritsar,Block 2,2015,11.4,354.0,279.0,Semi-Critical
-Gujarat,Rajkot,Block 1,2022,5.9,297.0,209.0,Semi-Critical
-Himachal Pradesh,Mandi,Block 2,2016,11.7,336.0,304.0,Critical
-Jammu and Kashmir,Jammu,Block 2,2020,5.5,,206.0,
-Maharashtra,Mumbai,Block 1,2020,14.9,,322.0,
-Punjab,Patiala,Block 1,2021,15.6,,274.0,
-Karnataka,Mysuru,Block 2,2016,13.3,391.0,340.0,Semi-Critical
-Goa,North Goa,Block 1,2020,19.2,222.0,235.0,Over-Exploited
-Himachal Pradesh,Kullu,Block 2,2015,6.9,351.0,372.0,Over-Exploited
-Uttar Pradesh,Agra,Block 2,2023,17.3,387.0,242.0,Safe
-Punjab,Patiala,Block 2,2016,,343.0,271.0,Semi-Critical
-Kerala,Kochi,Block 2,2023,19.3,265.0,233.0,Semi-Critical
-Arunachal Pradesh,,,2023,18.1,223.0,198.0,Semi-Critical
-Ladakh,,,2015,7.7,303.0,351.0,Over-Exploited
-Kerala,Kozhikode,Block 2,2020,18.3,326.0,330.0,Over-Exploited
-Chandigarh,,,2022,8.6,341.0,,
-Andhra Pradesh,Guntur,Block 1,2021,6.6,227.0,353.0,Over-Exploited
-Andaman and Nicobar Islands,,,2016,17.6,291.0,259.0,Semi-Critical
-Uttar Pradesh,Aligarh,Block 2,2017,9.5,301.0,267.0,Semi-Critical
-Dadra and Nagar Haveli and Daman and Diu,,,2021,14.1,210.0,399.0,Over-Exploited
-Jharkhand,Jamshedpur,Block 2,2015,16.2,292.0,335.0,Over-Exploited
-Punjab,Ludhiana,Block 1,2015,9.4,334.0,402.0,Over-Exploited
-Uttar Pradesh,Lucknow,Block 1,2015,7.4,,232.0,
-Rajasthan,Ajmer,Block 2,2021,15.2,271.0,194.0,Semi-Critical
-Rajasthan,Jodhpur,Block 1,2017,,233.0,366.0,Over-Exploited
-Jharkhand,Dhanbad,Block 1,2016,15.1,384.0,379.0,Critical
-Maharashtra,Nagpur,Block 2,2019,12.9,289.0,416.0,Over-Exploited
-Jharkhand,Jamshedpur,Block 1,2020,15.6,386.0,,
-Goa,South Goa,Block 1,2019,11.7,214.0,364.0,Over-Exploited
-Tamil Nadu,Chennai,Block 1,2022,8.2,286.0,390.0,Over-Exploited
-Gujarat,Bhavnagar,Block 1,2020,16.8,367.0,278.0,Semi-Critical
-Madhya Pradesh,Indore,Block 2,2020,18.8,,309.0,
-Gujarat,Surat,Block 1,2020,8.2,325.0,389.0,Over-Exploited
-Tamil Nadu,Madurai,Block 2,2016,13.9,243.0,181.0,Semi-Critical
-Uttar Pradesh,Agra,Block 1,2017,13.5,263.0,181.0,Safe
-Andhra Pradesh,Nellore,Block 1,2019,14.1,304.0,245.0,Semi-Critical
-Lakshadweep,,,2018,15.7,231.0,217.0,Critical
-Punjab,Amritsar,Block 2,2022,11.5,201.0,222.0,Over-Exploited
-Andaman and Nicobar Islands,,,2021,13.8,328.0,305.0,Critical
-Assam,,,2019,13.4,288.0,,
-Uttar Pradesh,Varanasi,Block 1,2017,9.2,364.0,269.0,Semi-Critical
-Rajasthan,Kota,Block 2,2019,,266.0,380.0,Over-Exploited
-Rajasthan,Jaipur,Block 1,2021,17.5,383.0,356.0,Critical
-Andhra Pradesh,West Godavari,Block 1,2020,11.6,252.0,414.0,Over-Exploited
-Karnataka,Mysuru,Block 2,2019,,207.0,,
-Bihar,,,2021,6.2,256.0,260.0,Over-Exploited
-Tamil Nadu,Coimbatore,Block 1,2018,5.3,,216.0,
-Madhya Pradesh,Rewa,Block 2,2021,17.8,331.0,360.0,Over-Exploited
-Tamil Nadu,Chennai,Block 2,2015,15.7,,308.0,
-Uttar Pradesh,Aligarh,Block 2,2021,13.3,218.0,346.0,Over-Exploited
-Tamil Nadu,Madurai,Block 1,2021,10.8,255.0,348.0,Over-Exploited
-Kerala,Kozhikode,Block 1,2016,16.1,361.0,240.0,Safe
-Gujarat,Bhavnagar,Block 2,2023,,,326.0,
-Rajasthan,Jodhpur,Block 2,2021,16.0,366.0,403.0,Over-Exploited
-Kerala,Kochi,Block 2,2016,,249.0,207.0,Semi-Critical
-Jammu and Kashmir,Jammu,Block 1,2016,18.2,399.0,202.0,Safe
-Kerala,Thiruvananthapuram,Block 1,2015,13.1,229.0,214.0,Critical
-Andhra Pradesh,West Godavari,Block 2,2017,18.6,398.0,320.0,Semi-Critical
-Gujarat,Bhavnagar,Block 2,2021,16.9,201.0,249.0,Over-Exploited
-Andhra Pradesh,Chittoor,Block 1,2021,17.0,275.0,322.0,Over-Exploited
-Madhya Pradesh,Jabalpur,Block 2,2023,6.2,333.0,267.0,Semi-Critical
-Goa,South Goa,Block 2,2020,6.3,345.0,,
-Delhi,,,2019,7.6,265.0,185.0,Safe
-Uttar Pradesh,Gorakhpur,Block 1,2020,17.5,,301.0,
-Rajasthan,Ajmer,Block 1,2021,16.6,384.0,293.0,Semi-Critical
-Uttar Pradesh,Lucknow,Block 2,2016,18.4,323.0,385.0,Over-Exploited
-Rajasthan,Jaipur,Block 2,2020,8.3,339.0,289.0,Semi-Critical
-Punjab,Jalandhar,Block 1,2015,16.7,208.0,314.0,Over-Exploited
-Rajasthan,Jodhpur,Block 1,2018,15.8,292.0,332.0,Over-Exploited
-Dadra and Nagar Haveli and Daman and Diu,,,2020,5.8,,398.0,
-Tamil Nadu,Coimbatore,Block 2,2016,12.8,342.0,376.0,Over-Exploited
-Ladakh,,,2019,10.7,278.0,338.0,Over-Exploited
-Delhi,,,2021,19.1,257.0,225.0,Semi-Critical
-Uttar Pradesh,Kanpur,Block 2,2021,7.5,273.0,391.0,Over-Exploited
-Punjab,Amritsar,Block 2,2016,5.7,246.0,326.0,Over-Exploited
-Madhya Pradesh,Rewa,Block 2,2017,,207.0,402.0,Over-Exploited
-Goa,North Goa,Block 2,2023,5.3,280.0,233.0,Semi-Critical
-Rajasthan,Ajmer,Block 1,2018,18.1,,203.0,
-Odisha,,,2022,5.5,247.0,200.0,Semi-Critical
-Tripura,,,2017,14.8,281.0,291.0,Over-Exploited
-Jharkhand,Dhanbad,Block 2,2021,14.1,308.0,246.0,Semi-Critical
-Gujarat,Rajkot,Block 2,2017,9.0,328.0,200.0,Safe
-Andhra Pradesh,Guntur,Block 1,2018,9.5,385.0,249.0,Safe
-Gujarat,Surat,Block 2,2020,14.5,399.0,,
-Himachal Pradesh,Shimla,Block 2,2019,8.7,291.0,184.0,Safe
-Punjab,Patiala,Block 2,2015,5.2,247.0,,
-Chhattisgarh,,,2015,11.2,209.0,311.0,Over-Exploited
-Uttar Pradesh,Varanasi,Block 2,2021,9.1,290.0,332.0,Over-Exploited
-Himachal Pradesh,Mandi,Block 1,2022,12.0,335.0,,
-Gujarat,Rajkot,Block 1,2017,15.9,374.0,254.0,Safe
-Uttar Pradesh,Varanasi,Block 2,2020,16.9,378.0,286.0,Semi-Critical
-Tamil Nadu,Madurai,Block 1,2022,9.1,314.0,350.0,Over-Exploited
-Andhra Pradesh,Nellore,Block 2,2019,5.8,301.0,209.0,Safe
-Himachal Pradesh,Kullu,Block 1,2019,13.3,388.0,186.0,Safe
-Uttar Pradesh,Gorakhpur,Block 2,2022,14.0,296.0,369.0,Over-Exploited
-Madhya Pradesh,Bhopal,Block 2,2021,16.5,350.0,319.0,Critical
-Lakshadweep,,,2021,,208.0,388.0,Over-Exploited
-Kerala,Kochi,Block 1,2020,,300.0,211.0,Semi-Critical
-Jammu and Kashmir,Srinagar,Block 1,2018,11.6,231.0,328.0,Over-Exploited
-Tamil Nadu,Madurai,Block 1,2015,11.2,229.0,356.0,Over-Exploited
-Gujarat,Rajkot,Block 2,2016,13.3,265.0,251.0,Critical
-Gujarat,Surat,Block 2,2015,19.6,316.0,319.0,Over-Exploited
-Maharashtra,Pune,Block 1,2015,17.8,334.0,412.0,Over-Exploited
-Odisha,,,2023,19.8,374.0,411.0,Over-Exploited
-Puducherry,,,2018,18.5,304.0,237.0,Semi-Critical
-Nagaland,,,2022,,311.0,316.0,Over-Exploited
-Maharashtra,Nagpur,Block 1,2018,11.4,210.0,,
-Gujarat,Vadodara,Block 2,2023,5.4,264.0,229.0,Semi-Critical
-Gujarat,Surat,Block 2,2019,16.3,365.0,186.0,Safe
-Rajasthan,Jaipur,Block 2,2015,18.2,251.0,281.0,Over-Exploited
-Tamil Nadu,Chennai,Block 1,2017,8.4,383.0,209.0,Safe
-Andhra Pradesh,Krishna,Block 2,2023,15.8,358.0,,
-Madhya Pradesh,Rewa,Block 2,2018,16.4,337.0,194.0,Safe
-Uttar Pradesh,Agra,Block 1,2022,6.1,225.0,400.0,Over-Exploited
-Punjab,Ludhiana,Block 1,2023,6.6,229.0,419.0,Over-Exploited
-Uttarakhand,,,2015,8.1,376.0,,
-Telangana,,,2019,19.7,248.0,294.0,Over-Exploited
-Jammu and Kashmir,Jammu,Block 1,2022,5.7,,,
-Madhya Pradesh,Indore,Block 1,2021,18.4,230.0,239.0,Over-Exploited
-Kerala,Thiruvananthapuram,Block 2,2017,7.4,249.0,341.0,Over-Exploited
-Madhya Pradesh,Indore,Block 2,2017,9.6,,,
-Jharkhand,Jamshedpur,Block 1,2015,14.1,357.0,254.0,Semi-Critical
-Himachal Pradesh,Kullu,Block 1,2017,,230.0,277.0,Over-Exploited
-Rajasthan,Jodhpur,Block 2,2022,16.6,284.0,319.0,Over-Exploited
-Karnataka,Mysuru,Block 1,2016,,350.0,295.0,Semi-Critical
-Puducherry,,,2022,,334.0,203.0,Safe
-Andhra Pradesh,Krishna,Block 1,2023,11.9,291.0,,
-Nagaland,,,2019,,,268.0,
-Gujarat,Ahmedabad,Block 1,2016,13.2,356.0,263.0,Semi-Critical
-Jharkhand,Dhanbad,Block 2,2018,18.5,296.0,396.0,Over-Exploited
-Uttar Pradesh,Gorakhpur,Block 1,2017,16.0,321.0,338.0,Over-Exploited
-Jharkhand,Jamshedpur,Block 2,2019,8.0,214.0,378.0,Over-Exploited
+Delhi,Delhi_District_2,Delhi_District_2_Block_1,2022,13.8,327,196,Safe
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_2,2016,5.9,225,270,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_3,Dadra and Nagar Haveli and Daman and Diu_District_3_Block_2,2019,8.6,217,241,Over-Exploited
+Rajasthan,Jaipur,Jaipur_Block_1,2019,9.3,315,313,Critical
+Madhya Pradesh,Jabalpur,Jabalpur_Block_2,2015,13.9,350,352,Over-Exploited
+Gujarat,Surat,Surat_Block_2,2023,8.0,226,201,Semi-Critical
+Odisha,Odisha_District_1,Odisha_District_1_Block_2,2020,5.4,213,304,Over-Exploited
+Kerala,Kozhikode,Kozhikode_Block_1,2017,12.7,319,284,Semi-Critical
+Ladakh,Ladakh_District_1,Ladakh_District_1_Block_1,2016,17.9,231,404,Over-Exploited
+Himachal Pradesh,Shimla,Shimla_Block_2,2017,9.9,237,414,Over-Exploited
+Ladakh,Ladakh_District_1,Ladakh_District_1_Block_2,2020,8.3,306,287,Critical
+Chhattisgarh,Chhattisgarh_District_2,Chhattisgarh_District_2_Block_1,2017,11.9,400,367,Critical
+Telangana,Telangana_District_3,Telangana_District_3_Block_2,2022,5.1,371,293,Semi-Critical
+Maharashtra,Nagpur,Nagpur_Block_1,2023,15.1,291,392,Over-Exploited
+Uttar Pradesh,Varanasi,Varanasi_Block_2,2019,8.7,281,258,Critical
+Jharkhand,Dhanbad,Dhanbad_Block_1,2016,11.3,382,406,Over-Exploited
+Madhya Pradesh,Jabalpur,Jabalpur_Block_2,2018,5.5,361,191,Safe
+Puducherry,Puducherry_District_1,Puducherry_District_1_Block_2,2015,5.1,338,227,Safe
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_1,Dadra and Nagar Haveli and Daman and Diu_District_1_Block_2,2021,18.0,296,407,Over-Exploited
+Kerala,Kozhikode,Kozhikode_Block_1,2021,13.3,289,310,Over-Exploited
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_1,2021,7.1,241,403,Over-Exploited
+Maharashtra,Pune,Pune_Block_1,2017,12.1,250,303,Over-Exploited
+Andhra Pradesh,East Godavari,East Godavari_Block_2,2016,11.9,361,244,Safe
+Lakshadweep,Lakshadweep_District_1,Lakshadweep_District_1_Block_1,2017,15.6,285,373,Over-Exploited
+Madhya Pradesh,Gwalior,Gwalior_Block_2,2018,11.0,290,334,Over-Exploited
+Bihar,Bihar_District_3,Bihar_District_3_Block_2,2022,8.2,296,363,Over-Exploited
+Bihar,Bihar_District_2,Bihar_District_2_Block_1,2023,9.0,380,268,Semi-Critical
+Puducherry,Puducherry_District_3,Puducherry_District_3_Block_1,2019,5.1,257,306,Over-Exploited
+Nagaland,Nagaland_District_2,Nagaland_District_2_Block_1,2015,11.6,210,406,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_2,Arunachal Pradesh_District_2_Block_1,2016,12.1,377,382,Over-Exploited
+Sikkim,Sikkim_District_2,Sikkim_District_2_Block_1,2017,5.0,386,306,Semi-Critical
+Maharashtra,Pune,Pune_Block_2,2017,10.6,386,404,Over-Exploited
+Puducherry,Puducherry_District_3,Puducherry_District_3_Block_1,2017,8.2,354,336,Critical
+Manipur,Manipur_District_3,Manipur_District_3_Block_1,2015,12.8,233,262,Over-Exploited
+Goa,North Goa,North Goa_Block_2,2020,10.9,291,338,Over-Exploited
+Punjab,Amritsar,Amritsar_Block_2,2018,14.4,255,359,Over-Exploited
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_1,2022,6.9,344,306,Semi-Critical
+Karnataka,Bengaluru,Bengaluru_Block_1,2020,13.2,318,367,Over-Exploited
+Jammu and Kashmir,Anantnag,Anantnag_Block_1,2019,16.4,230,253,Over-Exploited
+Ladakh,Ladakh_District_2,Ladakh_District_2_Block_2,2017,5.4,200,348,Over-Exploited
+Manipur,Manipur_District_3,Manipur_District_3_Block_1,2018,13.2,216,196,Critical
+Madhya Pradesh,Jabalpur,Jabalpur_Block_2,2023,14.4,308,291,Critical
+Karnataka,Bengaluru,Bengaluru_Block_1,2018,11.8,253,314,Over-Exploited
+Andhra Pradesh,Guntur,Guntur_Block_1,2017,19.4,244,300,Over-Exploited
+Jammu and Kashmir,Anantnag,Anantnag_Block_1,2016,17.9,299,348,Over-Exploited
+Delhi,Delhi_District_3,Delhi_District_3_Block_1,2021,14.9,207,238,Over-Exploited
+Andhra Pradesh,Visakhapatnam,Visakhapatnam_Block_1,2021,16.7,321,246,Semi-Critical
+Ladakh,Ladakh_District_3,Ladakh_District_3_Block_1,2016,7.4,230,269,Over-Exploited
+Rajasthan,Jodhpur,Jodhpur_Block_1,2015,16.4,349,224,Safe
+Mizoram,Mizoram_District_3,Mizoram_District_3_Block_2,2019,11.4,371,222,Safe
+Himachal Pradesh,Manali,Manali_Block_1,2021,16.9,277,373,Over-Exploited
+Ladakh,Ladakh_District_2,Ladakh_District_2_Block_1,2018,8.9,294,313,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_2,Chhattisgarh_District_2_Block_2,2020,5.4,384,283,Semi-Critical
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_1,2021,16.1,284,230,Semi-Critical
+Manipur,Manipur_District_3,Manipur_District_3_Block_2,2016,6.8,222,348,Over-Exploited
+Uttar Pradesh,Varanasi,Varanasi_Block_2,2015,7.3,384,393,Over-Exploited
+Gujarat,Vadodara,Vadodara_Block_2,2023,17.8,391,301,Semi-Critical
+Goa,South Goa,South Goa_Block_2,2021,7.6,227,376,Over-Exploited
+Tamil Nadu,Coimbatore,Coimbatore_Block_2,2022,16.0,268,413,Over-Exploited
+Punjab,Amritsar,Amritsar_Block_1,2019,8.2,350,373,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_3,Chhattisgarh_District_3_Block_2,2020,19.6,288,416,Over-Exploited
+Delhi,Delhi_District_3,Delhi_District_3_Block_2,2019,5.8,336,314,Critical
+Telangana,Telangana_District_1,Telangana_District_1_Block_2,2015,5.1,204,324,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_2,Arunachal Pradesh_District_2_Block_2,2020,10.3,235,271,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_3,Chhattisgarh_District_3_Block_1,2015,11.8,363,304,Semi-Critical
+Jharkhand,Ranchi,Ranchi_Block_2,2020,20.0,398,263,Safe
+Sikkim,Sikkim_District_2,Sikkim_District_2_Block_2,2018,5.7,327,409,Over-Exploited
+Uttar Pradesh,Varanasi,Varanasi_Block_1,2022,14.6,345,297,Semi-Critical
+Puducherry,Puducherry_District_1,Puducherry_District_1_Block_1,2018,6.5,212,399,Over-Exploited
+Assam,Assam_District_1,Assam_District_1_Block_1,2023,7.2,298,389,Over-Exploited
+Tripura,Tripura_District_3,Tripura_District_3_Block_1,2019,12.0,300,185,Safe
+Madhya Pradesh,Jabalpur,Jabalpur_Block_1,2018,13.1,267,225,Semi-Critical
+Ladakh,Ladakh_District_3,Ladakh_District_3_Block_1,2020,15.0,268,412,Over-Exploited
+Goa,North Goa,North Goa_Block_2,2019,10.6,340,333,Critical
+Sikkim,Sikkim_District_1,Sikkim_District_1_Block_2,2016,7.4,267,406,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_1,Dadra and Nagar Haveli and Daman and Diu_District_1_Block_1,2021,5.9,242,183,Semi-Critical
+Bihar,Bihar_District_3,Bihar_District_3_Block_1,2023,7.4,217,289,Over-Exploited
+Goa,North Goa,North Goa_Block_1,2019,9.4,393,273,Safe
+Maharashtra,Pune,Pune_Block_1,2021,18.3,360,200,Safe
+Mizoram,Mizoram_District_2,Mizoram_District_2_Block_2,2020,14.5,304,391,Over-Exploited
+Madhya Pradesh,Indore,Indore_Block_2,2018,14.1,202,203,Over-Exploited
+Andhra Pradesh,Guntur,Guntur_Block_2,2016,6.8,357,316,Semi-Critical
+Puducherry,Puducherry_District_1,Puducherry_District_1_Block_2,2021,8.5,265,376,Over-Exploited
+Goa,South Goa,South Goa_Block_1,2021,9.3,243,263,Over-Exploited
+Rajasthan,Bhilwara,Bhilwara_Block_1,2015,14.3,283,312,Over-Exploited
+Uttar Pradesh,Aligarh,Aligarh_Block_2,2017,7.3,334,313,Critical
+Goa,North Goa,North Goa_Block_1,2015,8.8,242,206,Semi-Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_1,Dadra and Nagar Haveli and Daman and Diu_District_1_Block_1,2018,5.3,237,289,Over-Exploited
+Gujarat,Ahmedabad,Ahmedabad_Block_2,2020,6.7,316,273,Semi-Critical
+Mizoram,Mizoram_District_3,Mizoram_District_3_Block_1,2020,18.3,290,226,Semi-Critical
+Karnataka,Mysuru,Mysuru_Block_1,2023,7.4,372,406,Over-Exploited
+Jammu and Kashmir,Srinagar,Srinagar_Block_1,2023,17.7,349,300,Semi-Critical
+Delhi,Delhi_District_3,Delhi_District_3_Block_2,2023,13.4,237,180,Semi-Critical
+Meghalaya,Meghalaya_District_3,Meghalaya_District_3_Block_1,2016,17.4,338,254,Semi-Critical
+Gujarat,Gandhinagar,Gandhinagar_Block_1,2020,16.2,398,207,Safe
+Meghalaya,Meghalaya_District_2,Meghalaya_District_2_Block_2,2015,13.8,344,344,Critical
+Jharkhand,Ranchi,Ranchi_Block_2,2016,11.9,359,205,Safe
+Himachal Pradesh,Mandi,Mandi_Block_1,2016,14.3,348,217,Safe
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_1,Andaman and Nicobar Islands_District_1_Block_2,2022,8.2,365,241,Safe
+Andhra Pradesh,Guntur,Guntur_Block_1,2020,9.3,239,252,Over-Exploited
+Himachal Pradesh,Manali,Manali_Block_2,2022,16.5,364,412,Over-Exploited
+Rajasthan,Jodhpur,Jodhpur_Block_2,2016,17.2,341,215,Safe
+Uttar Pradesh,Kanpur,Kanpur_Block_2,2020,14.3,286,201,Semi-Critical
+Nagaland,Nagaland_District_2,Nagaland_District_2_Block_2,2015,19.8,291,273,Critical
+Puducherry,Puducherry_District_1,Puducherry_District_1_Block_2,2020,6.9,361,355,Critical
+Telangana,Telangana_District_3,Telangana_District_3_Block_2,2017,16.7,277,304,Over-Exploited
+Goa,South Goa,South Goa_Block_1,2017,10.6,218,331,Over-Exploited
+Jharkhand,Dhanbad,Dhanbad_Block_2,2016,14.9,247,420,Over-Exploited
+Madhya Pradesh,Rewa,Rewa_Block_2,2023,12.2,230,416,Over-Exploited
+Delhi,Delhi_District_1,Delhi_District_1_Block_2,2015,19.9,238,182,Semi-Critical
+Tamil Nadu,Chennai,Chennai_Block_1,2019,5.1,266,348,Over-Exploited
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block_1,2021,5.6,374,257,Safe
+Haryana,Haryana_District_1,Haryana_District_1_Block_1,2022,12.6,306,389,Over-Exploited
+Ladakh,Ladakh_District_2,Ladakh_District_2_Block_1,2015,7.3,257,287,Over-Exploited
+Gujarat,Ahmedabad,Ahmedabad_Block_1,2021,11.0,367,219,Safe
+Sikkim,Sikkim_District_2,Sikkim_District_2_Block_2,2021,8.1,320,225,Semi-Critical
+Rajasthan,Bhilwara,Bhilwara_Block_1,2018,7.0,245,360,Over-Exploited
+Rajasthan,Jaipur,Jaipur_Block_2,2018,9.7,317,189,Safe
+Himachal Pradesh,Kullu,Kullu_Block_2,2023,7.9,231,259,Over-Exploited
+Jharkhand,Jamshedpur,Jamshedpur_Block_2,2016,8.8,238,287,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_3,Chhattisgarh_District_3_Block_2,2015,6.2,337,289,Semi-Critical
+Uttar Pradesh,Kanpur,Kanpur_Block_2,2015,14.3,263,343,Over-Exploited
+Meghalaya,Meghalaya_District_1,Meghalaya_District_1_Block_2,2019,18.0,265,243,Critical
+Rajasthan,Ajmer,Ajmer_Block_2,2018,12.4,210,227,Over-Exploited
+Kerala,Kozhikode,Kozhikode_Block_2,2022,19.2,327,354,Over-Exploited
+Madhya Pradesh,Gwalior,Gwalior_Block_1,2015,5.7,291,334,Over-Exploited
+Himachal Pradesh,Kullu,Kullu_Block_2,2016,15.9,202,347,Over-Exploited
+Sikkim,Sikkim_District_3,Sikkim_District_3_Block_1,2016,18.6,341,399,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_3,Chhattisgarh_District_3_Block_2,2018,16.3,264,332,Over-Exploited
+Gujarat,Surat,Surat_Block_2,2015,13.0,333,342,Over-Exploited
+Nagaland,Nagaland_District_2,Nagaland_District_2_Block_1,2022,11.4,324,327,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_1,Chhattisgarh_District_1_Block_2,2017,14.7,271,360,Over-Exploited
+Andhra Pradesh,Srikakulam,Srikakulam_Block_2,2021,19.3,338,191,Safe
+Lakshadweep,Lakshadweep_District_1,Lakshadweep_District_1_Block_2,2020,14.2,309,279,Critical
+Maharashtra,Nagpur,Nagpur_Block_2,2020,17.7,251,328,Over-Exploited
+Gujarat,Surat,Surat_Block_1,2022,6.8,250,378,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_3,Andaman and Nicobar Islands_District_3_Block_1,2018,13.2,295,214,Semi-Critical
+Haryana,Haryana_District_1,Haryana_District_1_Block_1,2020,19.3,200,211,Over-Exploited
+Tamil Nadu,Madurai,Madurai_Block_2,2020,5.3,371,373,Over-Exploited
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_1,2016,17.3,224,223,Critical
+Arunachal Pradesh,Arunachal Pradesh_District_3,Arunachal Pradesh_District_3_Block_1,2017,15.1,220,347,Over-Exploited
+Andhra Pradesh,East Godavari,East Godavari_Block_1,2021,9.4,299,217,Semi-Critical
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_2,2023,16.0,297,233,Semi-Critical
+Nagaland,Nagaland_District_3,Nagaland_District_3_Block_1,2019,10.1,365,200,Safe
+Rajasthan,Kota,Kota_Block_1,2015,8.7,223,260,Over-Exploited
+Sikkim,Sikkim_District_2,Sikkim_District_2_Block_2,2015,5.7,399,212,Safe
+Odisha,Odisha_District_2,Odisha_District_2_Block_2,2017,17.8,205,369,Over-Exploited
+Manipur,Manipur_District_2,Manipur_District_2_Block_2,2022,17.4,272,383,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_1,2020,8.8,247,414,Over-Exploited
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block_1,2017,8.5,332,337,Over-Exploited
+Gujarat,Bhavnagar,Bhavnagar_Block_2,2019,13.0,354,323,Critical
+Gujarat,Surat,Surat_Block_1,2023,11.7,400,319,Semi-Critical
+Meghalaya,Meghalaya_District_2,Meghalaya_District_2_Block_2,2023,17.8,248,227,Critical
+Delhi,Delhi_District_3,Delhi_District_3_Block_1,2020,8.9,234,227,Critical
+Andhra Pradesh,Krishna,Krishna_Block_1,2023,15.7,391,348,Semi-Critical
+Kerala,Kochi,Kochi_Block_1,2017,16.4,203,387,Over-Exploited
+Punjab,Ludhiana,Ludhiana_Block_1,2017,16.8,353,319,Critical
+Himachal Pradesh,Mandi,Mandi_Block_2,2021,6.4,351,339,Critical
+Mizoram,Mizoram_District_3,Mizoram_District_3_Block_2,2021,7.6,236,412,Over-Exploited
+Mizoram,Mizoram_District_1,Mizoram_District_1_Block_1,2018,8.1,316,317,Over-Exploited
+Jammu and Kashmir,Jammu,Jammu_Block_1,2018,9.5,275,227,Semi-Critical
+Rajasthan,Ajmer,Ajmer_Block_2,2022,7.2,298,328,Over-Exploited
+Rajasthan,Jodhpur,Jodhpur_Block_2,2020,19.0,313,409,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_2,Andaman and Nicobar Islands_District_2_Block_2,2017,12.5,245,277,Over-Exploited
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_2,2019,18.6,269,325,Over-Exploited
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_2,2022,5.2,255,254,Critical
+Bihar,Bihar_District_1,Bihar_District_1_Block_2,2016,19.3,317,319,Over-Exploited
+Delhi,Delhi_District_3,Delhi_District_3_Block_1,2022,13.8,329,403,Over-Exploited
+Assam,Assam_District_3,Assam_District_3_Block_1,2019,5.5,353,400,Over-Exploited
+Gujarat,Rajkot,Rajkot_Block_1,2021,19.6,352,230,Safe
+Rajasthan,Ajmer,Ajmer_Block_1,2023,10.1,207,310,Over-Exploited
+Gujarat,Ahmedabad,Ahmedabad_Block_1,2023,14.5,397,324,Semi-Critical
+Rajasthan,Kota,Kota_Block_1,2022,11.0,288,357,Over-Exploited
+Puducherry,Puducherry_District_3,Puducherry_District_3_Block_2,2017,16.2,286,269,Critical
+West Bengal,West Bengal_District_2,West Bengal_District_2_Block_2,2015,12.2,344,340,Critical
+Uttar Pradesh,Varanasi,Varanasi_Block_2,2021,11.5,255,332,Over-Exploited
+Odisha,Odisha_District_3,Odisha_District_3_Block_1,2019,15.6,381,335,Semi-Critical
+Tamil Nadu,Madurai,Madurai_Block_1,2020,16.0,380,336,Semi-Critical
+Odisha,Odisha_District_1,Odisha_District_1_Block_2,2023,17.1,270,224,Semi-Critical
+Telangana,Telangana_District_1,Telangana_District_1_Block_1,2018,15.3,235,288,Over-Exploited
+Manipur,Manipur_District_2,Manipur_District_2_Block_1,2015,13.2,317,406,Over-Exploited
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_2,2017,16.8,338,254,Semi-Critical
+Chhattisgarh,Chhattisgarh_District_2,Chhattisgarh_District_2_Block_1,2022,19.4,244,373,Over-Exploited
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_2,2020,8.4,267,322,Over-Exploited
+Telangana,Telangana_District_2,Telangana_District_2_Block_2,2015,14.9,238,213,Semi-Critical
+Mizoram,Mizoram_District_2,Mizoram_District_2_Block_1,2020,12.9,366,233,Safe
+Madhya Pradesh,Gwalior,Gwalior_Block_1,2020,16.8,343,384,Over-Exploited
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block_2,2016,13.6,325,386,Over-Exploited
+Manipur,Manipur_District_2,Manipur_District_2_Block_1,2019,11.2,374,200,Safe
+Himachal Pradesh,Manali,Manali_Block_2,2017,11.5,293,341,Over-Exploited
+Haryana,Haryana_District_2,Haryana_District_2_Block_2,2017,16.9,212,388,Over-Exploited
+Tripura,Tripura_District_3,Tripura_District_3_Block_2,2017,8.7,383,414,Over-Exploited
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_2,2017,16.0,202,180,Semi-Critical
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block_1,2022,13.0,382,368,Critical
+Uttar Pradesh,Lucknow,Lucknow_Block_1,2018,11.3,371,370,Critical
+Tripura,Tripura_District_3,Tripura_District_3_Block_1,2015,11.3,286,280,Critical
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_1,2020,17.3,234,227,Critical
+Meghalaya,Meghalaya_District_2,Meghalaya_District_2_Block_1,2015,17.5,250,349,Over-Exploited
+Manipur,Manipur_District_1,Manipur_District_1_Block_1,2019,10.2,264,207,Semi-Critical
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block_2,2023,19.4,203,340,Over-Exploited
+Sikkim,Sikkim_District_1,Sikkim_District_1_Block_1,2017,16.0,347,371,Over-Exploited
+Jammu and Kashmir,Anantnag,Anantnag_Block_2,2017,10.0,242,246,Over-Exploited
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_1,2021,15.9,339,311,Critical
+Gujarat,Bhavnagar,Bhavnagar_Block_1,2022,15.2,344,384,Over-Exploited
+Madhya Pradesh,Rewa,Rewa_Block_1,2015,16.9,270,314,Over-Exploited
+Himachal Pradesh,Mandi,Mandi_Block_1,2022,10.7,227,385,Over-Exploited
+Punjab,Patiala,Patiala_Block_2,2019,19.0,347,375,Over-Exploited
+Andhra Pradesh,Visakhapatnam,Visakhapatnam_Block_2,2018,10.3,270,327,Over-Exploited
+Lakshadweep,Lakshadweep_District_1,Lakshadweep_District_1_Block_1,2021,9.1,226,309,Over-Exploited
+Andhra Pradesh,Krishna,Krishna_Block_2,2017,5.7,238,340,Over-Exploited
+Karnataka,Mangalore,Mangalore_Block_2,2017,7.2,310,210,Safe
+Uttar Pradesh,Kanpur,Kanpur_Block_1,2022,10.2,382,340,Semi-Critical
+Bihar,Bihar_District_2,Bihar_District_2_Block_1,2015,9.0,359,183,Safe
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_2,Andaman and Nicobar Islands_District_2_Block_1,2021,6.2,315,218,Safe
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_3,Andaman and Nicobar Islands_District_3_Block_2,2018,19.9,218,365,Over-Exploited
+Uttar Pradesh,Kanpur,Kanpur_Block_1,2015,15.3,213,352,Over-Exploited
+Lakshadweep,Lakshadweep_District_2,Lakshadweep_District_2_Block_1,2023,18.2,363,357,Critical
+Odisha,Odisha_District_2,Odisha_District_2_Block_1,2018,13.3,260,363,Over-Exploited
+Assam,Assam_District_3,Assam_District_3_Block_2,2022,15.7,370,326,Semi-Critical
+Delhi,Delhi_District_1,Delhi_District_1_Block_1,2020,17.9,337,273,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_2,2020,10.1,244,311,Over-Exploited
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block_2,2015,11.6,250,402,Over-Exploited
+Madhya Pradesh,Indore,Indore_Block_2,2021,10.7,230,271,Over-Exploited
+Rajasthan,Kota,Kota_Block_2,2023,5.7,323,375,Over-Exploited
+Lakshadweep,Lakshadweep_District_3,Lakshadweep_District_3_Block_1,2022,15.4,317,221,Safe
+Assam,Assam_District_2,Assam_District_2_Block_1,2020,17.6,372,194,Safe
+Tripura,Tripura_District_2,Tripura_District_2_Block_1,2021,19.7,295,315,Over-Exploited
+West Bengal,West Bengal_District_2,West Bengal_District_2_Block_2,2023,12.5,236,250,Over-Exploited
+Uttar Pradesh,Aligarh,Aligarh_Block_1,2015,18.4,269,293,Over-Exploited
+Mizoram,Mizoram_District_2,Mizoram_District_2_Block_1,2018,16.4,217,249,Over-Exploited
+Sikkim,Sikkim_District_3,Sikkim_District_3_Block_2,2016,16.8,393,287,Semi-Critical
+Tamil Nadu,Madurai,Madurai_Block_1,2017,12.1,396,294,Semi-Critical
+Jharkhand,Jamshedpur,Jamshedpur_Block_2,2020,15.7,318,373,Over-Exploited
+Haryana,Haryana_District_3,Haryana_District_3_Block_1,2019,11.9,299,196,Safe
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_3,Dadra and Nagar Haveli and Daman and Diu_District_3_Block_1,2016,9.1,274,226,Semi-Critical
+Rajasthan,Jaipur,Jaipur_Block_2,2016,14.3,324,381,Over-Exploited
+Uttar Pradesh,Aligarh,Aligarh_Block_1,2018,15.4,381,420,Over-Exploited
+Karnataka,Mangalore,Mangalore_Block_2,2016,14.1,344,233,Safe
+Arunachal Pradesh,Arunachal Pradesh_District_2,Arunachal Pradesh_District_2_Block_2,2015,8.9,217,272,Over-Exploited
+Gujarat,Bhavnagar,Bhavnagar_Block_1,2018,17.6,304,403,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_1,2023,19.4,378,215,Safe
+Karnataka,Mangalore,Mangalore_Block_2,2018,9.4,370,202,Safe
+Tripura,Tripura_District_1,Tripura_District_1_Block_1,2018,13.0,205,255,Over-Exploited
+Chandigarh,Chandigarh_District_3,Chandigarh_District_3_Block_1,2020,6.6,296,320,Over-Exploited
+Bihar,Bihar_District_2,Bihar_District_2_Block_2,2016,16.9,390,296,Semi-Critical
+Punjab,Ludhiana,Ludhiana_Block_1,2016,7.9,375,331,Semi-Critical
+Maharashtra,Mumbai,Mumbai_Block_1,2018,16.4,320,362,Over-Exploited
+Tripura,Tripura_District_1,Tripura_District_1_Block_1,2021,14.8,391,301,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_1,2016,9.7,272,260,Critical
+Andhra Pradesh,Krishna,Krishna_Block_1,2016,9.2,249,244,Critical
+Nagaland,Nagaland_District_3,Nagaland_District_3_Block_1,2023,10.6,338,321,Critical
+Chhattisgarh,Chhattisgarh_District_1,Chhattisgarh_District_1_Block_1,2017,19.2,394,316,Semi-Critical
+Odisha,Odisha_District_1,Odisha_District_1_Block_1,2018,14.0,346,378,Over-Exploited
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_1,2017,12.2,373,364,Critical
+Punjab,Jalandhar,Jalandhar_Block_1,2019,8.1,223,364,Over-Exploited
+Madhya Pradesh,Bhopal,Bhopal_Block_1,2018,12.9,323,251,Semi-Critical
+Lakshadweep,Lakshadweep_District_1,Lakshadweep_District_1_Block_2,2018,15.9,336,310,Critical
+Kerala,Kochi,Kochi_Block_1,2016,19.8,308,411,Over-Exploited
+Odisha,Odisha_District_3,Odisha_District_3_Block_2,2019,10.5,391,284,Semi-Critical
+Delhi,Delhi_District_1,Delhi_District_1_Block_1,2016,17.6,211,190,Critical
+Meghalaya,Meghalaya_District_3,Meghalaya_District_3_Block_2,2022,16.9,207,208,Over-Exploited
+Gujarat,Rajkot,Rajkot_Block_1,2022,6.2,218,219,Over-Exploited
+Karnataka,Bengaluru,Bengaluru_Block_2,2023,16.0,323,251,Semi-Critical
+Punjab,Jalandhar,Jalandhar_Block_1,2015,7.7,201,410,Over-Exploited
+Punjab,Amritsar,Amritsar_Block_2,2021,16.8,379,191,Safe
+Odisha,Odisha_District_2,Odisha_District_2_Block_2,2021,16.0,362,283,Semi-Critical
+Andhra Pradesh,Visakhapatnam,Visakhapatnam_Block_1,2020,11.9,364,190,Safe
+Assam,Assam_District_2,Assam_District_2_Block_2,2016,18.3,343,184,Safe
+Uttar Pradesh,Lucknow,Lucknow_Block_2,2019,19.1,395,379,Critical
+Tripura,Tripura_District_3,Tripura_District_3_Block_1,2021,5.9,318,276,Semi-Critical
+Sikkim,Sikkim_District_3,Sikkim_District_3_Block_2,2015,10.5,305,194,Safe
+Andhra Pradesh,Srikakulam,Srikakulam_Block_2,2020,16.3,250,217,Semi-Critical
+Assam,Assam_District_3,Assam_District_3_Block_1,2022,18.7,350,314,Semi-Critical
+Lakshadweep,Lakshadweep_District_3,Lakshadweep_District_3_Block_1,2015,17.9,240,193,Semi-Critical
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_1,Andaman and Nicobar Islands_District_1_Block_1,2015,14.2,224,403,Over-Exploited
+Andhra Pradesh,East Godavari,East Godavari_Block_2,2023,8.6,327,370,Over-Exploited
+Telangana,Telangana_District_2,Telangana_District_2_Block_1,2020,6.0,211,418,Over-Exploited
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_2,2015,14.2,387,300,Semi-Critical
+Tripura,Tripura_District_2,Tripura_District_2_Block_1,2020,14.5,388,380,Critical
+Maharashtra,Mumbai,Mumbai_Block_2,2017,5.8,290,206,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_2,2021,15.0,203,418,Over-Exploited
+Meghalaya,Meghalaya_District_3,Meghalaya_District_3_Block_1,2019,16.9,372,233,Safe
+Assam,Assam_District_3,Assam_District_3_Block_2,2019,12.5,373,317,Semi-Critical
+Maharashtra,Pune,Pune_Block_1,2015,14.1,383,269,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_3,Arunachal Pradesh_District_3_Block_2,2020,9.9,289,345,Over-Exploited
+Jharkhand,Dhanbad,Dhanbad_Block_1,2021,10.1,366,223,Safe
+Maharashtra,Nagpur,Nagpur_Block_2,2022,19.1,214,327,Over-Exploited
+Lakshadweep,Lakshadweep_District_2,Lakshadweep_District_2_Block_1,2021,8.4,289,182,Safe
+Karnataka,Bengaluru,Bengaluru_Block_1,2016,8.0,291,360,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_3,Andaman and Nicobar Islands_District_3_Block_1,2023,9.7,309,206,Safe
+Uttar Pradesh,Varanasi,Varanasi_Block_1,2021,16.3,217,259,Over-Exploited
+Kerala,Kochi,Kochi_Block_2,2023,6.9,226,309,Over-Exploited
+Chandigarh,Chandigarh_District_1,Chandigarh_District_1_Block_1,2020,17.4,351,235,Safe
+Lakshadweep,Lakshadweep_District_2,Lakshadweep_District_2_Block_2,2021,19.4,212,271,Over-Exploited
+Chandigarh,Chandigarh_District_2,Chandigarh_District_2_Block_2,2019,11.3,257,251,Critical
+Chhattisgarh,Chhattisgarh_District_1,Chhattisgarh_District_1_Block_2,2022,12.2,300,287,Critical
+Odisha,Odisha_District_3,Odisha_District_3_Block_2,2018,5.8,322,345,Over-Exploited
+Karnataka,Mysuru,Mysuru_Block_2,2023,12.4,304,228,Semi-Critical
+Ladakh,Ladakh_District_1,Ladakh_District_1_Block_2,2023,6.0,252,408,Over-Exploited
+Chandigarh,Chandigarh_District_3,Chandigarh_District_3_Block_1,2023,12.8,351,225,Safe
+Kerala,Kochi,Kochi_Block_2,2021,18.6,382,193,Safe
+Jharkhand,Jamshedpur,Jamshedpur_Block_2,2022,10.5,368,347,Critical
+Punjab,Amritsar,Amritsar_Block_2,2020,15.8,349,382,Over-Exploited
+Punjab,Patiala,Patiala_Block_1,2023,5.2,381,279,Semi-Critical
+West Bengal,West Bengal_District_3,West Bengal_District_3_Block_2,2019,15.7,218,396,Over-Exploited
+Sikkim,Sikkim_District_1,Sikkim_District_1_Block_1,2015,10.8,203,295,Over-Exploited
+Gujarat,Gandhinagar,Gandhinagar_Block_1,2016,8.8,381,392,Over-Exploited
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_1,2023,14.1,309,373,Over-Exploited
+Chhattisgarh,Chhattisgarh_District_3,Chhattisgarh_District_3_Block_1,2023,6.7,229,298,Over-Exploited
+Tripura,Tripura_District_2,Tripura_District_2_Block_2,2016,17.2,200,319,Over-Exploited
+Lakshadweep,Lakshadweep_District_2,Lakshadweep_District_2_Block_2,2022,16.8,201,241,Over-Exploited
+Haryana,Haryana_District_1,Haryana_District_1_Block_2,2020,7.3,337,315,Critical
+Tamil Nadu,Chennai,Chennai_Block_1,2016,18.7,323,353,Over-Exploited
+Telangana,Telangana_District_3,Telangana_District_3_Block_2,2016,19.0,230,254,Over-Exploited
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_2,2020,16.4,234,267,Over-Exploited
+Madhya Pradesh,Jabalpur,Jabalpur_Block_1,2020,10.5,363,304,Semi-Critical
+Uttar Pradesh,Lucknow,Lucknow_Block_1,2019,11.4,343,398,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_1,2015,13.3,358,336,Critical
+Rajasthan,Jaipur,Jaipur_Block_1,2020,12.6,353,293,Semi-Critical
+Chandigarh,Chandigarh_District_3,Chandigarh_District_3_Block_1,2021,9.3,356,292,Semi-Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_1,2020,6.5,200,261,Over-Exploited
+Jammu and Kashmir,Anantnag,Anantnag_Block_2,2022,20.0,374,306,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_3,Arunachal Pradesh_District_3_Block_2,2023,8.8,395,191,Safe
+Himachal Pradesh,Shimla,Shimla_Block_2,2021,19.6,217,232,Over-Exploited
+Meghalaya,Meghalaya_District_1,Meghalaya_District_1_Block_1,2018,15.8,320,194,Safe
+Odisha,Odisha_District_2,Odisha_District_2_Block_2,2019,16.9,306,329,Over-Exploited
+Chandigarh,Chandigarh_District_2,Chandigarh_District_2_Block_2,2022,13.3,332,311,Critical
+Bihar,Bihar_District_2,Bihar_District_2_Block_2,2023,10.5,318,328,Over-Exploited
+Gujarat,Ahmedabad,Ahmedabad_Block_2,2021,15.2,200,297,Over-Exploited
+Rajasthan,Jodhpur,Jodhpur_Block_2,2017,12.8,381,291,Semi-Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_2,2020,9.8,391,381,Critical
+Meghalaya,Meghalaya_District_3,Meghalaya_District_3_Block_1,2022,13.8,285,334,Over-Exploited
+Jammu and Kashmir,Jammu,Jammu_Block_1,2019,5.8,207,394,Over-Exploited
+Odisha,Odisha_District_1,Odisha_District_1_Block_2,2021,8.8,328,415,Over-Exploited
+Jharkhand,Jamshedpur,Jamshedpur_Block_1,2015,15.3,234,327,Over-Exploited
+Meghalaya,Meghalaya_District_3,Meghalaya_District_3_Block_2,2016,15.3,316,312,Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_1,2022,16.7,288,222,Semi-Critical
+Delhi,Delhi_District_1,Delhi_District_1_Block_2,2022,8.7,382,220,Safe
+Assam,Assam_District_1,Assam_District_1_Block_1,2015,10.8,268,381,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_3,Andaman and Nicobar Islands_District_3_Block_2,2015,6.0,216,331,Over-Exploited
+Odisha,Odisha_District_3,Odisha_District_3_Block_1,2022,7.5,203,226,Over-Exploited
+Madhya Pradesh,Gwalior,Gwalior_Block_2,2019,7.9,328,268,Semi-Critical
+Delhi,Delhi_District_2,Delhi_District_2_Block_2,2022,18.4,299,208,Safe
+Himachal Pradesh,Manali,Manali_Block_1,2023,13.5,230,371,Over-Exploited
+Delhi,Delhi_District_2,Delhi_District_2_Block_1,2015,15.7,202,305,Over-Exploited
+Himachal Pradesh,Manali,Manali_Block_2,2021,8.1,317,306,Critical
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_2,2019,12.9,318,326,Over-Exploited
+Punjab,Jalandhar,Jalandhar_Block_2,2022,10.5,337,211,Safe
+Tamil Nadu,Coimbatore,Coimbatore_Block_1,2020,16.0,369,186,Safe
+Haryana,Haryana_District_2,Haryana_District_2_Block_2,2016,16.1,285,343,Over-Exploited
+Chandigarh,Chandigarh_District_1,Chandigarh_District_1_Block_1,2015,13.4,388,407,Over-Exploited
+Gujarat,Rajkot,Rajkot_Block_2,2023,16.7,216,361,Over-Exploited
+Himachal Pradesh,Mandi,Mandi_Block_2,2018,11.2,221,350,Over-Exploited
+Manipur,Manipur_District_1,Manipur_District_1_Block_1,2020,6.5,202,295,Over-Exploited
+Sikkim,Sikkim_District_3,Sikkim_District_3_Block_1,2015,12.1,246,361,Over-Exploited
+Gujarat,Vadodara,Vadodara_Block_1,2020,19.9,375,261,Safe
+Punjab,Jalandhar,Jalandhar_Block_2,2018,10.7,227,224,Critical
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_1,2018,17.3,200,320,Over-Exploited
+Nagaland,Nagaland_District_3,Nagaland_District_3_Block_2,2021,6.9,341,418,Over-Exploited
+West Bengal,West Bengal_District_2,West Bengal_District_2_Block_1,2016,9.4,389,261,Safe
+Haryana,Haryana_District_2,Haryana_District_2_Block_1,2019,19.3,350,390,Over-Exploited
+Kerala,Kozhikode,Kozhikode_Block_2,2021,16.9,206,182,Semi-Critical
+Madhya Pradesh,Rewa,Rewa_Block_1,2021,17.6,364,330,Critical
+Punjab,Jalandhar,Jalandhar_Block_2,2017,12.7,338,403,Over-Exploited
+Manipur,Manipur_District_2,Manipur_District_2_Block_2,2023,13.1,263,334,Over-Exploited
+Tripura,Tripura_District_2,Tripura_District_2_Block_1,2017,12.1,371,337,Critical
+Telangana,Telangana_District_3,Telangana_District_3_Block_1,2020,7.0,333,287,Semi-Critical
+West Bengal,West Bengal_District_2,West Bengal_District_2_Block_1,2022,5.1,303,192,Safe
+West Bengal,West Bengal_District_3,West Bengal_District_3_Block_1,2020,14.2,283,312,Over-Exploited
+Delhi,Delhi_District_1,Delhi_District_1_Block_2,2018,10.4,224,399,Over-Exploited
+Tamil Nadu,Chennai,Chennai_Block_2,2015,9.9,224,420,Over-Exploited
+Haryana,Haryana_District_3,Haryana_District_3_Block_1,2021,7.5,398,241,Safe
+Tripura,Tripura_District_1,Tripura_District_1_Block_2,2019,10.1,360,313,Semi-Critical
+Maharashtra,Mumbai,Mumbai_Block_1,2017,15.1,237,351,Over-Exploited
+Rajasthan,Bhilwara,Bhilwara_Block_1,2019,14.9,266,386,Over-Exploited
+Bihar,Bihar_District_1,Bihar_District_1_Block_2,2023,12.5,321,409,Over-Exploited
+Madhya Pradesh,Indore,Indore_Block_2,2015,7.0,231,400,Over-Exploited
+Himachal Pradesh,Kullu,Kullu_Block_1,2022,14.6,267,258,Critical
+Jammu and Kashmir,Jammu,Jammu_Block_2,2017,11.7,310,312,Over-Exploited
+Tamil Nadu,Coimbatore,Coimbatore_Block_2,2021,16.5,293,246,Semi-Critical
+Uttar Pradesh,Aligarh,Aligarh_Block_2,2019,13.9,249,305,Over-Exploited
+Chandigarh,Chandigarh_District_3,Chandigarh_District_3_Block_2,2020,6.7,386,403,Over-Exploited
+Tripura,Tripura_District_3,Tripura_District_3_Block_2,2018,5.3,389,351,Critical
+West Bengal,West Bengal_District_3,West Bengal_District_3_Block_2,2016,8.3,318,363,Over-Exploited
+Jammu and Kashmir,Jammu,Jammu_Block_2,2022,19.0,232,354,Over-Exploited
+Nagaland,Nagaland_District_3,Nagaland_District_3_Block_2,2023,5.3,229,388,Over-Exploited
+Ladakh,Ladakh_District_2,Ladakh_District_2_Block_2,2023,14.9,301,329,Over-Exploited
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_1,2016,6.3,396,394,Critical
+Tripura,Tripura_District_1,Tripura_District_1_Block_2,2021,14.3,214,214,Critical
+Gujarat,Ahmedabad,Ahmedabad_Block_2,2017,8.2,238,292,Over-Exploited
+Karnataka,Bengaluru,Bengaluru_Block_2,2015,11.4,215,346,Over-Exploited
+Tripura,Tripura_District_2,Tripura_District_2_Block_2,2021,10.7,273,243,Semi-Critical
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_1,2015,9.5,296,223,Semi-Critical
+Puducherry,Puducherry_District_3,Puducherry_District_3_Block_2,2021,11.5,354,184,Safe
+Tamil Nadu,Chennai,Chennai_Block_1,2021,8.4,363,336,Critical
+Punjab,Ludhiana,Ludhiana_Block_2,2020,8.6,400,287,Semi-Critical
+Jharkhand,Jamshedpur,Jamshedpur_Block_1,2020,13.5,285,235,Semi-Critical
+Ladakh,Ladakh_District_3,Ladakh_District_3_Block_2,2021,8.1,371,215,Safe
+Maharashtra,Nagpur,Nagpur_Block_1,2016,9.5,201,189,Critical
+Odisha,Odisha_District_3,Odisha_District_3_Block_1,2023,18.5,281,415,Over-Exploited
+Lakshadweep,Lakshadweep_District_3,Lakshadweep_District_3_Block_1,2020,10.2,287,237,Semi-Critical
+Jharkhand,Ranchi,Ranchi_Block_2,2023,19.6,398,199,Safe
+Punjab,Amritsar,Amritsar_Block_1,2017,16.6,290,208,Semi-Critical
+Himachal Pradesh,Shimla,Shimla_Block_1,2017,19.0,382,367,Critical
+Madhya Pradesh,Gwalior,Gwalior_Block_1,2016,8.6,294,238,Semi-Critical
+West Bengal,West Bengal_District_1,West Bengal_District_1_Block_2,2017,6.9,300,291,Critical
+Meghalaya,Meghalaya_District_2,Meghalaya_District_2_Block_1,2021,15.4,317,321,Over-Exploited
+Maharashtra,Nagpur,Nagpur_Block_1,2021,10.1,362,383,Over-Exploited
+Gujarat,Bhavnagar,Bhavnagar_Block_2,2020,6.6,203,288,Over-Exploited
+Haryana,Haryana_District_1,Haryana_District_1_Block_2,2015,16.5,360,290,Semi-Critical
+Lakshadweep,Lakshadweep_District_2,Lakshadweep_District_2_Block_1,2015,14.2,330,191,Safe
+Tamil Nadu,Chennai,Chennai_Block_2,2021,13.3,324,409,Over-Exploited
+Telangana,Telangana_District_1,Telangana_District_1_Block_1,2023,17.5,386,242,Safe
+Maharashtra,Mumbai,Mumbai_Block_2,2022,17.0,205,290,Over-Exploited
+Ladakh,Ladakh_District_3,Ladakh_District_3_Block_2,2015,15.8,342,183,Safe
+Uttarakhand,Uttarakhand_District_1,Uttarakhand_District_1_Block_1,2019,10.8,296,267,Critical
+Rajasthan,Ajmer,Ajmer_Block_2,2021,16.9,316,333,Over-Exploited
+Haryana,Haryana_District_3,Haryana_District_3_Block_2,2018,16.2,222,391,Over-Exploited
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_1,2019,11.1,357,389,Over-Exploited
+Nagaland,Nagaland_District_2,Nagaland_District_2_Block_1,2021,7.5,255,358,Over-Exploited
+Jammu and Kashmir,Anantnag,Anantnag_Block_2,2016,8.4,280,335,Over-Exploited
+Assam,Assam_District_2,Assam_District_2_Block_1,2019,7.8,390,286,Semi-Critical
+Gujarat,Ahmedabad,Ahmedabad_Block_1,2015,7.6,323,184,Safe
+Chandigarh,Chandigarh_District_1,Chandigarh_District_1_Block_1,2021,16.5,384,359,Critical
+West Bengal,West Bengal_District_3,West Bengal_District_3_Block_1,2019,17.9,377,277,Semi-Critical
+Himachal Pradesh,Kullu,Kullu_Block_2,2015,11.7,272,298,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_2,Andaman and Nicobar Islands_District_2_Block_2,2022,17.2,338,389,Over-Exploited
+Assam,Assam_District_2,Assam_District_2_Block_2,2015,18.5,244,261,Over-Exploited
+Karnataka,Mysuru,Mysuru_Block_2,2018,17.1,398,231,Safe
+Chhattisgarh,Chhattisgarh_District_1,Chhattisgarh_District_1_Block_1,2023,9.0,243,384,Over-Exploited
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_2,2023,8.0,335,389,Over-Exploited
+Goa,South Goa,South Goa_Block_1,2022,10.2,208,276,Over-Exploited
+Manipur,Manipur_District_1,Manipur_District_1_Block_2,2020,17.5,297,304,Over-Exploited
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block_1,2019,10.3,371,247,Safe
+Jammu and Kashmir,Srinagar,Srinagar_Block_2,2021,12.3,204,246,Over-Exploited
+Jharkhand,Dhanbad,Dhanbad_Block_2,2021,9.6,252,398,Over-Exploited
+Andhra Pradesh,Guntur,Guntur_Block_2,2023,13.1,339,337,Critical
+Arunachal Pradesh,Arunachal Pradesh_District_3,Arunachal Pradesh_District_3_Block_2,2021,17.7,326,416,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_2,Arunachal Pradesh_District_2_Block_1,2019,8.0,356,311,Semi-Critical
+Karnataka,Mangalore,Mangalore_Block_1,2015,17.6,240,225,Critical
+Himachal Pradesh,Mandi,Mandi_Block_2,2022,13.6,290,358,Over-Exploited
+Maharashtra,Nagpur,Nagpur_Block_2,2021,13.8,251,405,Over-Exploited
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_2,2020,16.5,231,379,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_2,Andaman and Nicobar Islands_District_2_Block_2,2020,9.9,397,382,Critical
+Maharashtra,Mumbai,Mumbai_Block_1,2020,12.7,387,322,Semi-Critical
+Jammu and Kashmir,Jammu,Jammu_Block_2,2016,11.2,223,281,Over-Exploited
+Gujarat,Rajkot,Rajkot_Block_2,2022,6.6,316,358,Over-Exploited
+Bihar,Bihar_District_1,Bihar_District_1_Block_1,2021,9.9,393,303,Semi-Critical
+Manipur,Manipur_District_1,Manipur_District_1_Block_1,2015,14.9,326,301,Critical
+Chandigarh,Chandigarh_District_1,Chandigarh_District_1_Block_2,2021,6.4,295,397,Over-Exploited
+Rajasthan,Jodhpur,Jodhpur_Block_1,2023,9.8,313,319,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_1,Dadra and Nagar Haveli and Daman and Diu_District_1_Block_1,2020,13.1,287,325,Over-Exploited
+Karnataka,Bengaluru,Bengaluru_Block_2,2017,17.6,344,381,Over-Exploited
+Delhi,Delhi_District_1,Delhi_District_1_Block_1,2017,11.4,369,254,Safe
+Assam,Assam_District_1,Assam_District_1_Block_2,2021,15.5,260,269,Over-Exploited
+Ladakh,Ladakh_District_1,Ladakh_District_1_Block_1,2023,6.0,200,252,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_3,Dadra and Nagar Haveli and Daman and Diu_District_3_Block_1,2020,16.6,211,339,Over-Exploited
+Madhya Pradesh,Rewa,Rewa_Block_2,2022,19.0,308,254,Semi-Critical
+Telangana,Telangana_District_3,Telangana_District_3_Block_1,2022,15.8,392,411,Over-Exploited
+Nagaland,Nagaland_District_1,Nagaland_District_1_Block_2,2018,18.3,259,296,Over-Exploited
+Sikkim,Sikkim_District_1,Sikkim_District_1_Block_2,2017,12.6,303,286,Critical
+Tripura,Tripura_District_1,Tripura_District_1_Block_1,2017,5.1,215,419,Over-Exploited
+Meghalaya,Meghalaya_District_1,Meghalaya_District_1_Block_2,2017,11.2,305,241,Semi-Critical
+Madhya Pradesh,Indore,Indore_Block_1,2023,10.6,351,403,Over-Exploited
+Andhra Pradesh,Visakhapatnam,Visakhapatnam_Block_1,2018,17.9,344,395,Over-Exploited
+Meghalaya,Meghalaya_District_1,Meghalaya_District_1_Block_2,2015,16.2,397,182,Safe
+Ladakh,Ladakh_District_3,Ladakh_District_3_Block_1,2017,13.9,371,411,Over-Exploited
+Delhi,Delhi_District_2,Delhi_District_2_Block_2,2018,20.0,278,251,Critical
+Uttar Pradesh,Aligarh,Aligarh_Block_1,2017,7.7,200,330,Over-Exploited
+Gujarat,Vadodara,Vadodara_Block_2,2019,9.6,378,347,Critical
+Maharashtra,Mumbai,Mumbai_Block_2,2023,16.2,201,267,Over-Exploited
+Uttarakhand,Uttarakhand_District_2,Uttarakhand_District_2_Block_1,2019,19.9,298,344,Over-Exploited
+Jammu and Kashmir,Srinagar,Srinagar_Block_2,2020,19.1,295,355,Over-Exploited
+Madhya Pradesh,Bhopal,Bhopal_Block_1,2015,8.5,243,227,Critical
+Sikkim,Sikkim_District_2,Sikkim_District_2_Block_1,2021,11.1,311,237,Semi-Critical
+Karnataka,Mangalore,Mangalore_Block_1,2016,19.3,376,411,Over-Exploited
+Gujarat,Vadodara,Vadodara_Block_1,2021,14.3,285,375,Over-Exploited
+Nagaland,Nagaland_District_3,Nagaland_District_3_Block_2,2017,7.3,301,274,Critical
+Madhya Pradesh,Bhopal,Bhopal_Block_2,2015,19.5,296,189,Safe
+Bihar,Bihar_District_3,Bihar_District_3_Block_1,2015,8.1,322,378,Over-Exploited
+Tripura,Tripura_District_2,Tripura_District_2_Block_2,2015,5.0,314,253,Semi-Critical
+Assam,Assam_District_3,Assam_District_3_Block_1,2020,17.2,375,229,Safe
+Arunachal Pradesh,Arunachal Pradesh_District_2,Arunachal Pradesh_District_2_Block_2,2023,13.4,219,229,Over-Exploited
+Uttar Pradesh,Lucknow,Lucknow_Block_1,2020,14.0,301,275,Critical
+Mizoram,Mizoram_District_1,Mizoram_District_1_Block_1,2022,18.8,400,219,Safe
+Punjab,Patiala,Patiala_Block_1,2016,12.2,394,269,Safe
+Madhya Pradesh,Gwalior,Gwalior_Block_2,2016,7.7,228,189,Semi-Critical
+Himachal Pradesh,Shimla,Shimla_Block_1,2021,7.2,220,284,Over-Exploited
+Arunachal Pradesh,Arunachal Pradesh_District_1,Arunachal Pradesh_District_1_Block_2,2015,7.1,210,266,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_3,Dadra and Nagar Haveli and Daman and Diu_District_3_Block_2,2017,13.1,347,199,Safe
+Maharashtra,Pune,Pune_Block_2,2023,11.8,227,236,Over-Exploited
+Chandigarh,Chandigarh_District_1,Chandigarh_District_1_Block_2,2018,11.0,309,415,Over-Exploited
+Meghalaya,Meghalaya_District_2,Meghalaya_District_2_Block_2,2019,8.1,323,272,Semi-Critical
+Tamil Nadu,Coimbatore,Coimbatore_Block_1,2015,11.3,206,223,Over-Exploited
+Nagaland,Nagaland_District_2,Nagaland_District_2_Block_2,2019,8.4,365,237,Safe
+Uttar Pradesh,Lucknow,Lucknow_Block_2,2022,14.1,387,262,Safe
+Jharkhand,Ranchi,Ranchi_Block_1,2022,17.6,211,209,Critical
+Telangana,Telangana_District_2,Telangana_District_2_Block_2,2016,10.4,238,373,Over-Exploited
+Jammu and Kashmir,Srinagar,Srinagar_Block_1,2021,19.2,261,267,Over-Exploited
+Chandigarh,Chandigarh_District_3,Chandigarh_District_3_Block_2,2023,13.1,293,249,Semi-Critical
+Himachal Pradesh,Shimla,Shimla_Block_2,2019,16.2,220,205,Critical
+Bihar,Bihar_District_3,Bihar_District_3_Block_1,2017,10.1,210,211,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_1,Andaman and Nicobar Islands_District_1_Block_1,2018,12.0,333,293,Semi-Critical
+Himachal Pradesh,Shimla,Shimla_Block_1,2020,6.3,330,201,Safe
+Lakshadweep,Lakshadweep_District_3,Lakshadweep_District_3_Block_2,2017,15.7,266,332,Over-Exploited
+Haryana,Haryana_District_3,Haryana_District_3_Block_2,2023,17.0,283,283,Critical
+Lakshadweep,Lakshadweep_District_3,Lakshadweep_District_3_Block_2,2022,15.4,232,398,Over-Exploited
+Andhra Pradesh,Visakhapatnam,Visakhapatnam_Block_2,2023,7.0,309,342,Over-Exploited
+Punjab,Patiala,Patiala_Block_1,2017,11.4,345,239,Safe
+Rajasthan,Bhilwara,Bhilwara_Block_2,2023,12.6,263,221,Semi-Critical
+Bihar,Bihar_District_3,Bihar_District_3_Block_2,2015,19.8,219,334,Over-Exploited
+Odisha,Odisha_District_2,Odisha_District_2_Block_1,2019,13.9,265,282,Over-Exploited
+Andhra Pradesh,Srikakulam,Srikakulam_Block_1,2015,12.5,381,384,Over-Exploited
+Jharkhand,Dhanbad,Dhanbad_Block_1,2022,12.3,209,414,Over-Exploited
+Assam,Assam_District_1,Assam_District_1_Block_2,2023,7.7,258,258,Critical
+Chandigarh,Chandigarh_District_2,Chandigarh_District_2_Block_1,2023,7.3,210,249,Over-Exploited
+Tamil Nadu,Coimbatore,Coimbatore_Block_1,2023,9.5,225,332,Over-Exploited
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block_1,2023,6.1,313,266,Semi-Critical
+Madhya Pradesh,Indore,Indore_Block_1,2016,6.9,396,370,Critical
+Bihar,Bihar_District_1,Bihar_District_1_Block_1,2022,8.1,334,258,Semi-Critical
+Rajasthan,Kota,Kota_Block_2,2020,10.3,383,312,Semi-Critical
+Odisha,Odisha_District_1,Odisha_District_1_Block_1,2019,19.3,325,183,Safe
+Manipur,Manipur_District_3,Manipur_District_3_Block_2,2022,16.0,294,183,Safe
+West Bengal,West Bengal_District_1,West Bengal_District_1_Block_2,2019,10.6,306,400,Over-Exploited
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_2,2023,8.8,327,300,Critical
+Puducherry,Puducherry_District_3,Puducherry_District_3_Block_2,2018,5.5,319,184,Safe
+Mizoram,Mizoram_District_1,Mizoram_District_1_Block_2,2015,6.1,368,254,Safe
+Madhya Pradesh,Rewa,Rewa_Block_1,2020,11.3,332,417,Over-Exploited
+Jharkhand,Ranchi,Ranchi_Block_1,2021,11.2,233,312,Over-Exploited
+Tripura,Tripura_District_1,Tripura_District_1_Block_2,2023,14.9,217,313,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_2,Andaman and Nicobar Islands_District_2_Block_1,2022,11.5,392,235,Safe
+Gujarat,Gandhinagar,Gandhinagar_Block_2,2016,8.5,400,368,Critical
+Telangana,Telangana_District_2,Telangana_District_2_Block_1,2016,9.1,385,195,Safe
+Andhra Pradesh,East Godavari,East Godavari_Block_1,2023,9.5,233,299,Over-Exploited
+Ladakh,Ladakh_District_2,Ladakh_District_2_Block_1,2021,19.0,345,370,Over-Exploited
+Goa,North Goa,North Goa_Block_2,2022,17.3,279,386,Over-Exploited
+Madhya Pradesh,Rewa,Rewa_Block_2,2017,13.3,331,232,Semi-Critical
+Arunachal Pradesh,Arunachal Pradesh_District_3,Arunachal Pradesh_District_3_Block_1,2021,7.3,352,276,Semi-Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_2,2021,11.1,328,268,Semi-Critical
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block_1,2016,13.4,363,300,Semi-Critical
+Uttarakhand,Uttarakhand_District_3,Uttarakhand_District_3_Block_1,2022,14.5,264,394,Over-Exploited
+Sikkim,Sikkim_District_3,Sikkim_District_3_Block_2,2023,16.0,348,387,Over-Exploited
+Gujarat,Surat,Surat_Block_2,2018,7.3,249,399,Over-Exploited
+Rajasthan,Kota,Kota_Block_2,2015,9.2,281,293,Over-Exploited
+Rajasthan,Ajmer,Ajmer_Block_1,2016,8.8,294,413,Over-Exploited
+Manipur,Manipur_District_1,Manipur_District_1_Block_2,2015,8.0,282,272,Critical
+Andhra Pradesh,Srikakulam,Srikakulam_Block_1,2016,8.8,363,194,Safe
+Punjab,Ludhiana,Ludhiana_Block_2,2017,15.8,207,387,Over-Exploited
+Telangana,Telangana_District_2,Telangana_District_2_Block_1,2018,5.5,274,241,Semi-Critical
+Mizoram,Mizoram_District_2,Mizoram_District_2_Block_2,2018,13.5,365,379,Over-Exploited
+Karnataka,Mysuru,Mysuru_Block_1,2020,14.3,316,255,Semi-Critical
+Puducherry,Puducherry_District_2,Puducherry_District_2_Block_2,2016,9.0,327,373,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_3,Andaman and Nicobar Islands_District_3_Block_2,2019,10.6,399,319,Semi-Critical
+Puducherry,Puducherry_District_1,Puducherry_District_1_Block_1,2022,13.0,204,330,Over-Exploited
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_1,Dadra and Nagar Haveli and Daman and Diu_District_1_Block_2,2016,7.5,312,311,Critical
+Manipur,Manipur_District_2,Manipur_District_2_Block_1,2023,8.9,239,277,Over-Exploited
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block_2,2023,16.8,247,180,Semi-Critical
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_1,Andaman and Nicobar Islands_District_1_Block_2,2016,7.0,293,218,Semi-Critical
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu_District_2,Dadra and Nagar Haveli and Daman and Diu_District_2_Block_2,2017,13.2,300,363,Over-Exploited
+Bihar,Bihar_District_2,Bihar_District_2_Block_2,2019,16.4,286,343,Over-Exploited
+Andaman and Nicobar Islands,Andaman and Nicobar Islands_District_1,Andaman and Nicobar Islands_District_1_Block_2,2020,18.5,392,314,Semi-Critical
+Lakshadweep,Lakshadweep_District_1,Lakshadweep_District_1_Block_2,2021,18.3,396,212,Safe
+Meghalaya,Meghalaya_District_1,Meghalaya_District_1_Block_1,2017,9.7,384,339,Semi-Critical
+Andhra Pradesh,Krishna,Krishna_Block_2,2019,5.8,346,383,Over-Exploited
+Punjab,Ludhiana,Ludhiana_Block_1,2020,9.2,319,310,Critical
+West Bengal,West Bengal_District_1,West Bengal_District_1_Block_1,2019,8.8,397,415,Over-Exploited
+Jharkhand,Dhanbad,Dhanbad_Block_2,2022,8.6,392,215,Safe
+Mizoram,Mizoram_District_3,Mizoram_District_3_Block_1,2017,17.0,207,367,Over-Exploited
+Kerala,Kochi,Kochi_Block_1,2019,19.3,395,292,Semi-Critical
+Telangana,Telangana_District_1,Telangana_District_1_Block_2,2023,8.1,278,348,Over-Exploited
+Tripura,Tripura_District_3,Tripura_District_3_Block_2,2023,19.4,216,336,Over-Exploited
+Chandigarh,Chandigarh_District_2,Chandigarh_District_2_Block_1,2017,12.5,264,286,Over-Exploited
+Rajasthan,Bhilwara,Bhilwara_Block_2,2022,18.8,248,207,Semi-Critical
+Odisha,Odisha_District_3,Odisha_District_3_Block_2,2022,18.9,320,204,Safe
+Himachal Pradesh,Kullu,Kullu_Block_1,2018,7.5,266,395,Over-Exploited
+Gujarat,Vadodara,Vadodara_Block_2,2021,5.0,329,236,Semi-Critical
+Tamil Nadu,Madurai,Madurai_Block_2,2015,6.8,233,417,Over-Exploited
+Goa,South Goa,South Goa_Block_2,2022,9.0,329,216,Safe
+West Bengal,West Bengal_District_1,West Bengal_District_1_Block_1,2018,13.4,284,355,Over-Exploited
+Punjab,Patiala,Patiala_Block_2,2023,14.3,215,188,Semi-Critical
+Madhya Pradesh,Bhopal,Bhopal_Block_2,2018,8.8,349,241,Safe
+West Bengal,West Bengal_District_3,West Bengal_District_3_Block_1,2015,12.8,354,354,Critical
+Haryana,Haryana_District_2,Haryana_District_2_Block_1,2018,9.3,333,262,Semi-Critical
+Andhra Pradesh,Krishna,Krishna_Block_2,2018,19.9,396,229,Safe
+Chhattisgarh,Chhattisgarh_District_2,Chhattisgarh_District_2_Block_2,2023,8.1,273,241,Semi-Critical
+Gujarat,Gandhinagar,Gandhinagar_Block_2,2018,19.3,240,194,Semi-Critical
+Mizoram,Mizoram_District_1,Mizoram_District_1_Block_2,2021,19.3,318,180,Safe
+Uttar Pradesh,Kanpur,Kanpur_Block_1,2023,13.0,352,345,Critical
+Gujarat,Gandhinagar,Gandhinagar_Block_1,2015,11.1,240,254,Over-Exploited

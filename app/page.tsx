@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Skeleton } from "@/components/ui/skeleton"
-import { Send, Bot, Paperclip, Sun, Moon } from "lucide-react"
+import { Send, Bot, Sun, Moon, Mic, MicOff } from "lucide-react"
 import { ChatMessage } from "@/components/chat-message"
 import { useTheme } from "next-themes"
 
@@ -38,11 +38,15 @@ export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [isListening, setIsListening] = useState(false)
   const [apiUrl, setApiUrl] = useState(
     process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
   )
   const [mounted, setMounted] = useState(false)
   const scrollAreaRef = useRef<HTMLDivElement>(null)
+  const recognitionRef = useRef<any>(null)
+  const silenceTimeoutRef = useRef<number | null>(null)
+  const inputValueRef = useRef<string>("")
   const { theme, setTheme, resolvedTheme } = useTheme()
 
   const scrollToBottom = () => {
@@ -57,6 +61,10 @@ export default function ChatPage() {
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  useEffect(() => {
+    inputValueRef.current = input
+  }, [input])
 
   useEffect(() => {
     scrollToBottom()
@@ -132,6 +140,111 @@ export default function ChatPage() {
     const currentTheme = resolvedTheme || theme
     setTheme(currentTheme === "dark" ? "light" : "dark")
   }
+
+  // Voice input via Web Speech API (where available)
+  const SILENCE_TIMEOUT_MS = 2000
+
+  const clearSilenceTimer = () => {
+    if (silenceTimeoutRef.current != null) {
+      window.clearTimeout(silenceTimeoutRef.current)
+      silenceTimeoutRef.current = null
+    }
+  }
+
+  const startSilenceTimer = () => {
+    clearSilenceTimer()
+    silenceTimeoutRef.current = window.setTimeout(() => {
+      // Auto stop and send if we have text
+      stopListening()
+      const latestText = inputValueRef.current
+      if (latestText && latestText.trim().length > 0 && !isLoading) {
+        sendMessage(latestText)
+      }
+    }, SILENCE_TIMEOUT_MS)
+  }
+
+  const startListening = () => {
+    if (typeof window === "undefined") return
+    // @ts-ignore - vendor prefixed API on some browsers
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+    if (!SpeechRecognition) {
+      console.warn("SpeechRecognition is not supported in this browser.")
+      return
+    }
+
+    try {
+      const recognition = new SpeechRecognition()
+      recognition.lang = "en-US"
+      recognition.interimResults = true
+      recognition.continuous = true
+      recognition.maxAlternatives = 1
+      recognition.onstart = () => {
+        setIsListening(true)
+        startSilenceTimer()
+      }
+      recognition.onerror = () => {
+        setIsListening(false)
+        clearSilenceTimer()
+      }
+      recognition.onend = () => {
+        // If user is still in listening mode, restart recognition to keep streaming
+        if (isListening) {
+          try { recognition.start() } catch {}
+        } else {
+          setIsListening(false)
+        }
+        clearSilenceTimer()
+      }
+      recognition.onresult = (event: any) => {
+        let finalTranscript = ""
+        let interimTranscript = ""
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const res = event.results[i]
+          if (res.isFinal) {
+            finalTranscript += res[0]?.transcript ?? ""
+          } else {
+            interimTranscript += res[0]?.transcript ?? ""
+          }
+        }
+        const combined = `${finalTranscript} ${interimTranscript}`.trim()
+        if (combined) {
+          setInput(combined)
+        }
+        startSilenceTimer()
+      }
+      recognitionRef.current = recognition
+      recognition.start()
+    } catch (e) {
+      console.error("Failed to start speech recognition", e)
+      setIsListening(false)
+    }
+  }
+
+  const stopListening = () => {
+    try {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop()
+      }
+    } catch (e) {
+      // no-op
+    } finally {
+      setIsListening(false)
+      clearSilenceTimer()
+    }
+  }
+
+  useEffect(() => {
+    return () => {
+      // cleanup on unmount
+      try {
+        if (recognitionRef.current) {
+          recognitionRef.current.stop()
+        }
+      } catch (e) {
+        // ignore
+      }
+    }
+  }, [])
 
   if (!mounted) {
     return (
@@ -230,12 +343,18 @@ export default function ChatPage() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
                 disabled={isLoading}
-                className="pr-12 pl-12 py-3 rounded-full border-border"
+                className="pr-12 py-3 rounded-full border-border"
               />
-              <Button variant="ghost" size="icon" className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8">
-                <Paperclip className="w-4 h-4" />
-              </Button>
               <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                <Button
+                  onClick={() => (isListening ? stopListening() : startListening())}
+                  disabled={isLoading}
+                  size="icon"
+                  className="w-8 h-8 rounded-full"
+                  aria-label={isListening ? "Stop voice input" : "Start voice input"}
+                >
+                  {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
+                </Button>
                 <Button
                   onClick={() => sendMessage()}
                   disabled={isLoading || !input.trim()}

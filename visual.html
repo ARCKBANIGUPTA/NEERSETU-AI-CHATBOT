@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Groundwater API Tester</title>
+	<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	<script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<style>
+		body { 
+			font-family: Arial, sans-serif; 
+			margin: 20px; 
+			background: #f8f9fa;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		input, button, select, textarea { 
+			font-size: 14px; 
+			padding: 8px;
+			margin: 4px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+		button {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		button:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+		}
+		.section { 
+			margin-bottom: 20px; 
+			padding: 15px;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		.results-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.visualization-panel {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		.json-panel {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		pre { 
+			background: #f8f9fa; 
+			padding: 15px; 
+			white-space: pre-wrap; 
+			border-radius: 4px;
+			font-size: 12px;
+			max-height: 400px;
+			overflow-y: auto;
+			border: 1px solid #e9ecef;
+		}
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		h3 {
+			color: #495057;
+			margin-bottom: 15px;
+		}
+		label {
+			font-weight: bold;
+			color: #495057;
+		}
+		.chart-container {
+			min-height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.no-chart {
+			color: #6c757d;
+			font-style: italic;
+			text-align: center;
+		}
+		@media (max-width: 768px) {
+			.results-container {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>🌊 Groundwater API Tester</h1>
+
+		<div class="section">
+			<h3>Quick Actions</h3>
+			<button id="btnHealth">🔍 Health Check</button>
+			<button id="btnSummary">📊 Summary</button>
+			<button id="btnStates">🗺 States</button>
+			<button id="btnYears">📅 Years</button>
+			<button id="btnColumns">📋 Columns</button>
+		</div>
+
+		<div class="section">
+			<h3>Query Interface</h3>
+			<label>Question:</label><br>
+			<input id="question" type="text" size="80" value="Show average Groundwater_Level_m by State" style="width: calc(100% - 120px);" />
+			<button id="btnQuery">🔎 Ask</button>
+		</div>
+
+		<div class="section">
+			<h3>Configuration</h3>
+			<label>API Base URL:</label><br>
+			<input id="baseUrl" type="text" size="50" value="http://127.0.0.1:8000" style="width: 100%; max-width: 400px;" />
+		</div>
+
+		<div class="results-container">
+			<div class="visualization-panel">
+				<h3>📈 Data Visualization</h3>
+				<div id="chart-container" class="chart-container">
+					<div class="no-chart">Run a query to see visualization</div>
+				</div>
+			</div>
+
+			<div class="json-panel">
+				<h3>🗂 Raw JSON Output</h3>
+				<pre id="json-output">Waiting for data...</pre>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/babel">
+		const { useState, useEffect } = React;
+		const { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } = (window.Recharts || window.recharts || {});
+
+		const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884D8", "#82CA9D"];
+
+		function ChartVisualization({ chart }) {
+			if (!chart || !chart.series || chart.series.length === 0) {
+				return React.createElement('div', { className: 'no-chart' }, 'No chart data available');
+			}
+
+			const renderChart = () => {
+				const hasCategoricalSeries = chart && chart.xAxis && Array.isArray(chart.xAxis.categories) && Array.isArray(chart.series) && chart.series.length > 0 && Array.isArray(chart.series[0].data) && (typeof chart.series[0].data[0] === 'number' || chart.series[0].data.length === 0);
+				if (hasCategoricalSeries) {
+					const categories = chart.xAxis.categories;
+					const seriesDefs = chart.series;
+					const transformedData = categories.map((cat, idx) => {
+						const row = { name: cat };
+						seriesDefs.forEach((s, sIdx) => {
+							const key = s.name || `Series ${sIdx + 1}`;
+							row[key] = (Array.isArray(s.data) && typeof s.data[idx] === 'number') ? s.data[idx] : 0;
+						});
+						return row;
+					});
+					return React.createElement(ResponsiveContainer, { width: "100%", height: 400 },
+						React.createElement(BarChart, { data: transformedData },
+							React.createElement(CartesianGrid, { strokeDasharray: "3 3" }),
+							React.createElement(XAxis, { dataKey: "name", angle: -45, textAnchor: "end", height: 80 }),
+							React.createElement(YAxis),
+							React.createElement(Tooltip),
+							React.createElement(Legend),
+							seriesDefs.map((s, idx) => React.createElement(Bar, {
+								key: idx,
+								dataKey: s.name || `Series ${idx + 1}`,
+								fill: (s.color || COLORS[idx % COLORS.length])
+							}))
+						)
+					);
+				}
+
+				const chartData = chart.series[0]?.data || [];
+
+				// Transform data for Recharts
+				const transformedData = chartData.map((item, index) => ({
+					name: item.x || item.name || `Item ${index + 1}`,
+					value: item.y || item.value || 0,
+					...item,
+				}));
+
+				switch (chart.type) {
+					case "line":
+						return React.createElement(ResponsiveContainer, { width: "100%", height: 400 },
+							React.createElement(LineChart, { data: transformedData },
+								React.createElement(CartesianGrid, { strokeDasharray: "3 3" }),
+								React.createElement(XAxis, { dataKey: "name", angle: -45, textAnchor: "end", height: 80 }),
+								React.createElement(YAxis),
+								React.createElement(Tooltip),
+								React.createElement(Legend),
+								chart.series.map((series, index) =>
+									React.createElement(Line, {
+										key: index,
+										type: "monotone",
+										dataKey: "value",
+										stroke: COLORS[index % COLORS.length],
+										strokeWidth: 2,
+										name: series.name || `Series ${index + 1}`
+									})
+								)
+							)
+						);
+
+					case "bar":
+						return React.createElement(ResponsiveContainer, { width: "100%", height: 400 },
+							React.createElement(BarChart, { data: transformedData },
+								React.createElement(CartesianGrid, { strokeDasharray: "3 3" }),
+								React.createElement(XAxis, { dataKey: "name", angle: -45, textAnchor: "end", height: 80 }),
+								React.createElement(YAxis),
+								React.createElement(Tooltip),
+								React.createElement(Legend),
+								chart.series.map((series, index) =>
+									React.createElement(Bar, {
+										key: index,
+										dataKey: "value",
+										fill: COLORS[index % COLORS.length],
+										name: series.name || `Series ${index + 1}`
+									})
+								)
+							)
+						);
+
+					case "pie":
+						return React.createElement(ResponsiveContainer, { width: "100%", height: 400 },
+							React.createElement(PieChart, {},
+								React.createElement(Pie, {
+									data: transformedData,
+									cx: "50%",
+									cy: "50%",
+									labelLine: false,
+									label: ({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`,
+									outerRadius: 120,
+									fill: "#8884d8",
+									dataKey: "value"
+								},
+								transformedData.map((entry, index) =>
+									React.createElement(Cell, {
+										key: `cell-${index}`,
+										fill: COLORS[index % COLORS.length]
+									})
+								)
+								),
+							React.createElement(Tooltip),
+							React.createElement(Legend)
+							)
+						);
+
+					default:
+						return React.createElement('div', { 
+							style: { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '160px', color: '#6c757d' } 
+						}, `Unsupported chart type: ${chart.type}`);
+				}
+			};
+
+			return React.createElement('div', {},
+				React.createElement('h4', { style: { marginBottom: '15px', color: '#495057' } }, chart.title || "Data Visualization"),
+				renderChart()
+			);
+		}
+
+		// Main App Component
+		function App() {
+			const [chartData, setChartData] = useState(null);
+			const [jsonData, setJsonData] = useState('Waiting for data...');
+
+			const updateDisplay = (data) => {
+				// Update JSON display
+				setJsonData(typeof data === 'string' ? data : JSON.stringify(data, null, 2));
+
+				// Try to create chart from data
+				if (data && typeof data === 'object') {
+					// Check if it's already chart data
+					if (data.chart || data.visualization) {
+						setChartData(data.chart || data.visualization);
+					}
+					// Try to auto-generate chart from tabular data
+					else if (Array.isArray(data) && data.length > 0) {
+						const firstItem = data[0];
+						const keys = Object.keys(firstItem);
+						
+						if (keys.length >= 2) {
+							const xKey = keys[0];
+							const yKey = keys.find(k => k !== xKey && !isNaN(parseFloat(firstItem[k]))) || keys[1];
+							
+							const chartData = {
+								type: "bar",
+								title: `${yKey} by ${xKey}`,
+								series: [{
+									name: yKey,
+									data: data.map(item => ({
+										x: item[xKey],
+										y: parseFloat(item[yKey]) || 0,
+										name: item[xKey],
+										value: parseFloat(item[yKey]) || 0
+									}))
+								}]
+							};
+							setChartData(chartData);
+						}
+					}
+					// Handle object with numerical values
+					else if (typeof data === 'object' && !Array.isArray(data)) {
+						const entries = Object.entries(data).filter(([k, v]) => !isNaN(parseFloat(v)));
+						if (entries.length > 0) {
+							const chartData = {
+								type: "pie",
+								title: "Data Distribution",
+								series: [{
+									name: "Values",
+									data: entries.map(([key, value]) => ({
+										x: key,
+										y: parseFloat(value),
+										name: key,
+										value: parseFloat(value)
+									}))
+								}]
+							};
+							setChartData(chartData);
+						}
+					}
+				}
+			};
+
+			useEffect(() => {
+				// Make functions available globally
+				window.updateDisplay = updateDisplay;
+			}, []);
+
+			return React.createElement('div', {},
+				chartData ? React.createElement(ChartVisualization, { chart: chartData }) 
+						  : React.createElement('div', { className: 'no-chart' }, 'Run a query to see visualization')
+			);
+		}
+
+		// Render the React app
+		const root = ReactDOM.createRoot(document.getElementById('chart-container'));
+		root.render(React.createElement(App));
+	</script>
+
+	<script>
+		const jsonOutput = document.getElementById('json-output');
+		const baseUrl = document.getElementById('baseUrl');
+
+		function showJson(obj) {
+			const jsonString = typeof obj === 'string' ? obj : JSON.stringify(obj, null, 2);
+			jsonOutput.textContent = jsonString;
+			
+			// Update visualization
+			if (window.updateDisplay) {
+				window.updateDisplay(obj);
+			}
+		}
+
+		async function get(path) {
+			try {
+				const res = await fetch(`${baseUrl.value}${path}`, {
+					method: 'GET',
+					mode: 'cors',
+					credentials: 'omit',
+				});
+				if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+				return await res.json();
+			} catch (error) {
+				return { error: error.message };
+			}
+		}
+
+		async function post(path, body) {
+			try {
+				const res = await fetch(`${baseUrl.value}${path}`, {
+					method: 'POST',
+					mode: 'cors',
+					credentials: 'omit',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify(body)
+				});
+				if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+				return await res.json();
+			} catch (error) {
+				return { error: error.message };
+			}
+		}
+
+		// Event listeners
+		// Event listeners
+		document.getElementById('btnHealth').onclick = async () => {
+			const result = await get('/health');
+			showJson(result);
+		};
+
+		document.getElementById('btnSummary').onclick = async () => {
+			showJson(await get('/summary'));
+		};
+
+		document.getElementById('btnStates').onclick = async () => {
+			showJson(await get('/states'));
+		};
+
+		document.getElementById('btnYears').onclick = async () => {
+			showJson(await get('/years'));
+		};
+
+		document.getElementById('btnColumns').onclick = async () => {
+			showJson(await get('/columns'));
+		};
+
+		document.getElementById('btnQuery').onclick = async () => {
+			const question = document.getElementById('question').value;
+			if (!question.trim()) {
+				showJson({ error: 'Please enter a question' });
+				return;
+			}
+			showJson(await post('/query', { question }));
+		};
+
+		// Allow Enter key to submit query
+		document.getElementById('question').addEventListener('keypress', function(e) {
+			if (e.key === 'Enter') {
+				document.getElementById('btnQuery').click();
+			}
+		});
+	</script>
+</body>
+</html>
