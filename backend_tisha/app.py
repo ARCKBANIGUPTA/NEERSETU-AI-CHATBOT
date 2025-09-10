@@ -1076,9 +1076,10 @@ async def root():
     return {"message": "INGRES Groundwater Data Assistant API", "version": "1.0.0"}
 
 @app.head("/")
-async def root_head():
-    """Root endpoint HEAD handler"""
-    return
+async def head_root():
+    """Handle HEAD requests for health checks"""
+    from fastapi import Response
+    return Response(status_code=200)
 
 
 
