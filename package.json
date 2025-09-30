@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbo --port 3000",
     "dev:fast": "next dev --turbo --port 3000",
     "lint": "next lint",
     "start": "next start",
     "vercel-build": "next build",
-    "vercel-dev": "next dev --turbo"
+    "vercel-dev": "next dev --turbo --port 3000"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -47,6 +47,7 @@
     "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "framer-motion": "^12.23.22",
     "geist": "latest",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
