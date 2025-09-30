@@ -66,7 +66,7 @@ export default function ChatPage() {
   const [latitude, setLatitude] = useState<number | null>(null);
   const [longitude, setLongitude] = useState<number | null>(null);
   const [apiUrl] = useState(
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+    process.env.NEXT_PUBLIC_API_URL || "https://neersetu.onrender.com"
   );
   const [mounted, setMounted] = useState(false);
 

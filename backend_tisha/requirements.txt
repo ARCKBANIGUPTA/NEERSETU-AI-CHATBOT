@@ -1,8 +1,9 @@
-fastapi==0.104.1
-uvicorn==0.24.0
-pandas==2.1.4
-requests==2.31.0
-plotly==5.17.0
-python-dotenv==1.0.0
-pydantic==2.9.2
+fastapi==0.115.6
+uvicorn==0.32.1
+pandas==2.2.3
+requests==2.32.3
+plotly==5.24.1
+python-dotenv==1.0.1
+pydantic==2.10.4
 langchain-groq==0.3.8
+langchain-experimental==0.3.3
