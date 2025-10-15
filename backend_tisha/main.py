@@ -20,7 +20,6 @@ import math
 from langchain_experimental.agents import create_pandas_dataframe_agent
 import warnings
 warnings.filterwarnings('ignore')
-from ml import GroundwaterPredictor
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -138,232 +137,6 @@ class GroundwaterAssistant:
         
         return df
     
-    def predict_category_for_location(self, state: str, district: str = None, year: int = None) -> Dict[str, Any]:
-        """Predict groundwater category for a specific location"""
-        if not hasattr(self, 'ml_predictor') or self.ml_predictor is None:
-            return {"error": "ML model not available"}
-        location_data = self.df.copy()
-        if state:
-            location_data = location_data[location_data['State'].str.contains(state, case=False, na=False)]
-        if district and 'District' in location_data.columns:
-            location_data = location_data[location_data['District'].str.contains(district, case=False, na=False)]
-        if location_data.empty:
-            return {"error": f"No data found for {district}, {state}" if district else f"No data found for {state}"}
-        if year and 'Year' in location_data.columns:
-            year_data = location_data[location_data['Year'] == year]
-            if not year_data.empty:
-                location_data = year_data
-        if 'Year' in location_data.columns and location_data['Year'].notna().any():
-            latest_year = location_data['Year'].max()
-            location_data = location_data[location_data['Year'] == latest_year]
-        sample_data: Dict[str, Any] = {}
-        feature_cols = getattr(self.ml_predictor, 'feature_columns', [])
-        for col in feature_cols:
-            if col in location_data.columns:
-                sample_data[col] = float(location_data[col].mean())
-            else:
-                sample_data[col] = 0
-        try:
-            prediction = self.ml_predictor.predict_category(sample_data)
-            forecast = self.ml_predictor.forecast_future_scenario(sample_data)
-            return {
-                "location": f"{district}, {state}" if district else state,
-                "current_prediction": prediction,
-                "future_forecast": forecast,
-                "sample_data": sample_data,
-                "feature_importance": self.ml_predictor.get_feature_importance()
-            }
-        except Exception as e:
-            return {"error": f"Prediction failed: {str(e)}"}
-    
-    def get_forecast_for_coordinates(self, latitude: float, longitude: float) -> Dict[str, Any]:
-        """Get ML forecast for coordinates"""
-        if not hasattr(self, 'ml_predictor') or self.ml_predictor is None:
-            return {"error": "ML model not available"}
-        nearby_locations = self.find_nearest_locations(latitude, longitude, 50.0)
-        if nearby_locations.empty:
-            return {"error": "No data found within 50km of coordinates"}
-        closest = nearby_locations.iloc[0]
-        sample_data: Dict[str, Any] = {}
-        feature_cols = getattr(self.ml_predictor, 'feature_columns', [])
-        for col in feature_cols:
-            if col in closest.index and pd.notna(closest[col]):
-                sample_data[col] = float(closest[col])
-            else:
-                sample_data[col] = 0
-        try:
-            prediction = self.ml_predictor.predict_category(sample_data)
-            forecast = self.ml_predictor.forecast_future_scenario(sample_data)
-            return {
-                "coordinates": {"latitude": latitude, "longitude": longitude},
-                "closest_location": {
-                    "state": closest.get('State'),
-                    "district": closest.get('District'),
-                    "city": closest.get('City'),
-                    "distance_km": round(float(closest['Distance_km']), 2)
-                },
-                "current_prediction": prediction,
-                "future_forecast": forecast,
-                "feature_importance": self.ml_predictor.get_feature_importance()
-            }
-        except Exception as e:
-            return {"error": f"Prediction failed: {str(e)}"}
-    
-    def handle_ml_prediction_query(self, query: str, latitude: Optional[float] = None, longitude: Optional[float] = None) -> Optional[Dict[str, Any]]:
-        """Handle ML prediction queries"""
-        query_lower = query.lower()
-        prediction_keywords = ['predict', 'forecast', 'future', 'will be', 'category in', 'status in', '2030', '2035', '2040', '2045', 'trends', 'chart future']
-        if not any(keyword in query_lower for keyword in prediction_keywords):
-            return None
-        result = None
-        if latitude is not None and longitude is not None:
-            result = self.get_forecast_for_coordinates(latitude, longitude)
-            if result and "error" not in result:
-                response = self.format_ml_prediction_response(result, query_lower)
-                chart_data = self.create_forecast_visualization(result)
-                return {
-                    "response": response,
-                    "data": result.get("future_forecast", []),
-                    "chart": chart_data,
-                    "chart_type": "line",
-                    "location_info": result.get("closest_location")
-                }
-        location_intent = self.extract_location_keywords(query)
-        if location_intent.get('mentioned_state'):
-            result = self.predict_category_for_location(
-                state=location_intent['mentioned_state'],
-                district=location_intent.get('mentioned_district')
-            )
-            if result and "error" not in result:
-                response = self.format_ml_prediction_response(result, query_lower)
-                chart_data = self.create_forecast_visualization(result)
-                return {
-                    "response": response,
-                    "data": result.get("future_forecast", []),
-                    "chart": chart_data,
-                    "chart_type": "line",
-                    "location_info": None
-                }
-        if any(word in query_lower for word in ['chart', 'trends', 'forecast', 'future']) and not result:
-            sample_data = {
-                'Annual_Rainfall_mm': 800,
-                'Annual_Recharge_MCM': 150,
-                'Annual_Extractable_MCM': 120,
-                'Annual_Extraction_MCM': 100,
-                'Stage_of_Extraction_pct': 66.7,
-                'Groundwater_Level_m': -10,
-                'Population': 50000,
-                'Area (in km^2)': 500
-            }
-            if hasattr(self, 'ml_predictor') and self.ml_predictor:
-                try:
-                    forecast = self.ml_predictor.forecast_future_scenario(sample_data)
-                    chart_data = self.create_forecast_visualization({"future_forecast": forecast})
-                    return {
-                        "response": "Here's a sample groundwater extraction forecast showing how extraction levels may change over time based on current trends.",
-                        "data": forecast,
-                        "chart": chart_data,
-                        "chart_type": "line",
-                        "location_info": None
-                    }
-                except Exception as e:
-                    print(f"[DEBUG] Error creating sample forecast: {e}")
-        return None
-    
-    def format_ml_prediction_response(self, result: Dict[str, Any], query: str) -> str:
-        """Format ML prediction response"""
-        response_lines: List[str] = []
-        if "current_prediction" in result:
-            current = result["current_prediction"]
-            location = result.get("location", "the specified location")
-            if isinstance(current, dict):
-                response_lines.append(f"Current Groundwater Prediction for {location}:")
-                response_lines.append(f"Category: {current.get('predicted_category')} (Confidence: {current.get('confidence', 0):.1%})")
-        if "future_forecast" in result and result["future_forecast"]:
-            response_lines.append("")
-            response_lines.append("Future Forecast:")
-            for forecast in result["future_forecast"]:
-                year = forecast['year']
-                category = forecast['predicted_category']
-                confidence = forecast['confidence']
-                extraction_pct = forecast.get('stage_of_extraction_pct', 0)
-                response_lines.append(f"• {year}: {category} (Confidence: {confidence:.1%}) - Extraction: {extraction_pct:.1f}%")
-        if "feature_importance" in result and result["feature_importance"]:
-            response_lines.append("")
-            response_lines.append("Key Factors (Feature Importance):")
-            for feature, importance in result["feature_importance"][:3]:
-                feature_name = str(feature).replace('_', ' ').title()
-                response_lines.append(f"• {feature_name}: {importance:.3f}")
-        return "\n".join(response_lines).strip()
-    
-    def create_forecast_visualization(self, result: Dict[str, Any]) -> Optional[Dict]:
-        """Create visualization for forecast data"""
-        if "future_forecast" not in result or not result["future_forecast"]:
-            print("[DEBUG] No future_forecast data for visualization")
-            return None
-        forecast_data = result["future_forecast"]
-        print(f"[DEBUG] Creating forecast visualization with {len(forecast_data)} data points")
-        chart_data = {
-            "type": "line",
-            "title": "Groundwater Extraction Forecast",
-            "xAxis": {
-                "label": "Year",
-                "type": "category",
-                "categories": [str(item["year"]) for item in forecast_data]
-            },
-            "yAxis": {
-                "label": "Stage of Extraction (%)",
-                "type": "value"
-            },
-            "series": [{
-                "name": "Extraction Percentage",
-                "type": "line",
-                "data": [
-                    {"x": item["year"], "y": round(item.get("stage_of_extraction_pct", 0), 1)}
-                    for item in forecast_data
-                ]
-            }]
-        }
-        print(f"[DEBUG] Forecast chart data created: {chart_data}")
-        return chart_data
-
-    def create_ml_trend_visualization(self, data: pd.DataFrame, query: str) -> tuple[Optional[Dict], Optional[str]]:
-        """Create trend visualization for ML predictions"""
-        print(f"[DEBUG] Creating ML trend visualization")
-        if hasattr(self, 'ml_predictor') and self.ml_predictor:
-            try:
-                sample_data: Dict[str, Any] = {}
-                feature_cols = getattr(self.ml_predictor, 'feature_columns', [])
-                for col in feature_cols:
-                    if col in data.columns:
-                        sample_data[col] = float(data[col].mean())
-                    else:
-                        sample_data[col] = 0
-                forecast = self.ml_predictor.forecast_future_scenario(sample_data)
-                chart_data = {
-                    "type": "line",
-                    "title": "Groundwater Extraction Trend Forecast",
-                    "xAxis": {
-                        "label": "Year",
-                        "type": "category",
-                        "categories": [str(item["year"]) for item in forecast]
-                    },
-                    "yAxis": {
-                        "label": "Stage of Extraction (%)",
-                        "type": "value"
-                    },
-                    "series": [{
-                        "name": "Extraction Percentage",
-                        "type": "line",
-                        "data": [round(item["stage_of_extraction_pct"], 1) for item in forecast],
-                        "color": "#dc3545"
-                    }]
-                }
-                print(f"[DEBUG] ML trend chart created with {len(forecast)} forecast points")
-                return chart_data, "line"
-            except Exception as e:
-                print(f"[DEBUG] Error creating ML trend visualization: {e}")
-        return None, None
     
     def calculate_distance(self, lat1: float, lon1: float, lat2: float, lon2: float) -> float:
         """Calculate distance between two points using Haversine formula"""
@@ -574,11 +347,6 @@ class GroundwaterAssistant:
                 elif location_intent['mentioned_state']:
                     filtered_data = filtered_data[filtered_data['State'] == location_intent['mentioned_state']]
             
-            # Check for ML prediction queries BEFORE visualization check
-            ml_result = self.handle_ml_prediction_query(enhanced_question, latitude, longitude)
-            if ml_result:
-                print("[DEBUG] Returning ML prediction result with visualization")
-                return ml_result
 
             # Handle greeting queries
             if self.is_greeting_query(enhanced_question):
@@ -790,10 +558,6 @@ You are the Groundwater Dataset Assistant.
         query_lower = query.lower()
         
         try:
-            # ML Forecast specific charts
-            if any(word in query_lower for word in ['forecast', 'future', 'predict', '2030', '2040', 'trends']):
-                print("[DEBUG] Creating ML forecast trend chart")
-                return self.create_ml_trend_visualization(data, query_lower)
             print(f"[DEBUG] Query contains 'rainfall': {'rainfall' in query_lower}")
             print(f"[DEBUG] Query contains 'compare': {'compare' in query_lower}")
             # Groundwater level specific comparison
@@ -2039,27 +1803,11 @@ assistant = None
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize the assistant and ML model on startup"""
+    """Initialize the assistant on startup"""
     global assistant
     csv_path = "data/indian_groundwater.csv"
     assistant = GroundwaterAssistant(csv_path)
-    # Initialize and load ML model
-    try:
-        assistant.ml_predictor = GroundwaterPredictor()
-        assistant.ml_predictor.load_model('models/groundwater_predictor.pkl')
-        print("ML model loaded successfully")
-    except Exception as e:
-        print(f"Warning: Could not load ML model: {str(e)}")
-        print("Training new model...")
-        try:
-            assistant.ml_predictor = GroundwaterPredictor()
-            results = assistant.ml_predictor.train_model(assistant.df, model_type='random_forest')
-            assistant.ml_predictor.save_model('models/groundwater_predictor.pkl')
-            print(f"New ML model trained and saved: {results}")
-        except Exception as e2:
-            print(f"Error training model: {str(e2)}")
-            assistant.ml_predictor = None
-    print("Enhanced Groundwater Assistant with ML initialized")
+    print("Enhanced Groundwater Assistant initialized")
 
 @app.get("/")
 async def root():
@@ -2169,31 +1917,6 @@ async def debug_data():
         }
     }
 
-@app.post("/predict")
-async def predict_groundwater(request: Dict[str, Any]):
-    """ML prediction endpoint"""
-    if not assistant or not hasattr(assistant, 'ml_predictor') or assistant.ml_predictor is None:
-        raise HTTPException(status_code=500, detail="ML model not available")
-    try:
-        if 'coordinates' in request and request['coordinates'] is not None:
-            coords = request['coordinates']
-            result = assistant.get_forecast_for_coordinates(coords['latitude'], coords['longitude'])
-        elif 'location' in request and request['location'] is not None:
-            loc = request['location']
-            result = assistant.predict_category_for_location(
-                state=loc['state'],
-                district=loc.get('district'),
-                year=loc.get('year')
-            )
-        else:
-            raise HTTPException(status_code=400, detail="Either coordinates or location must be provided")
-        if "error" in result:
-            raise HTTPException(status_code=404, detail=result["error"])
-        return result
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
