@@ -1,13 +1,8 @@
 fastapi
 uvicorn[standard]
 pandas
-requests
 plotly
 python-dotenv
 langchain-groq
 langchain-experimental
 numpy
-scikit-learn
-joblib
-matplotlib
-seaborn
